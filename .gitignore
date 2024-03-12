@@ -7,3 +7,6 @@ __pycache__/
 node_modules/
 .github/
 cloudinary_python.txt
+node_modules/
+db.sqlite3
+staticfiles/
