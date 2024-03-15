@@ -16,8 +16,8 @@ Acceptance criteria 2
 Acceptance criteria 3
 
 Tasks:
-- type: checkboxes
-- type: checkboxes
-- type: checkboxes
+- [ ] 1
+- [ ] 2
+- [ ] 3
 
 
