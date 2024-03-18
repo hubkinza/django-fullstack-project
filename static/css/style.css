@@ -53,3 +53,15 @@ img.logo {
     border-bottom: 2px solid var(--blue);
     font-weight: 500;
 }
+
+
+/* Footer style*/
+footer {
+    flex-shrink: 0;
+    background-color: var(--off-white);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-top: var(--border);
+}
