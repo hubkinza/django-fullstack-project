@@ -1,4 +1,9 @@
-from django.shortcuts import render
+#using class based views instead of function based views 
+from django.views.generic import TemplateView
+#from books.models import Book
 
-def index(request):
-    return render(request, 'events/index.html')
+
+class Index(TemplateView):
+    template_name = 'events/index.html'
+   # model = Book
+    #context_object_name = 'books'

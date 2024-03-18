@@ -1,7 +1,9 @@
-from django.urls import path
 
-from . import views
+from django.urls import path
+#import the view from this directory and access the class "index"
+from .views import Index
+
 
 urlpatterns = [
-    path('', views.index, name='index')
+    path('', Index.as_view(), name='home')
 ]
