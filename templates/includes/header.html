@@ -32,16 +32,16 @@
           {% if request.user.is_authenticated %}
 
           <li class="nav-item">
-            <a class="nav-link {% if url_name == 'accounts_logout' %}active{% endif %}" href="#">LOGOUT</a>
+            <a class="nav-link {% if url_name == 'accounts_logout' %}active{% endif %}" href="/accounts/logout/">LOGOUT</a>
           </li>
           {% else %}
           <li class="nav-item">
             <a class="nav-link {% if url_name == 'accounts_signup' %}active{% endif %}"
-              href=""#">REGISTER</a>
+              href="/accounts/signup/">REGISTER</a>
           </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link {% if url_name == 'accounts_login' %}active{% endif %}" href="#">LOGIN</a>
-          </li>-->
+          <li class="nav-item">
+            <a class="nav-link {% if url_name == 'accounts_login' %}active{% endif %}" href="/accounts/login/">LOGIN</a>
+          </li>
           {% endif %}
         </ul>
         <!-- Form for search bar -->
