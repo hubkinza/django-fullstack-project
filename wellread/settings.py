@@ -52,6 +52,8 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'events',
+    'crispy_forms',
+    'crispy_bootstrap5',
 
     
 ]
@@ -153,6 +155,11 @@ USE_TZ = True
 #Account Setup 
 
 ACCOUNT_EMAIL_VERIFCATION = 'none'
+ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_USERNAME_REQUIRED = True
+ACCOUNT_USERNAME_MIN_LENGTH = 4
+
 
 
 
