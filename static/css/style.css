@@ -6,7 +6,7 @@
 
     /* Colour variables */
     --background: #3f006a0f;
-    --blue: #4a3bed;
+    --green: #09796489;
     --black: #000;
     --off-white: #f6f6f6;
     --white: #fff;
@@ -50,7 +50,7 @@ img.logo {
 }
 
 .active {
-    border-bottom: 2px solid var(--blue);
+    border-bottom: 2px solid var(--green);
     font-weight: 500;
 }
 
@@ -80,3 +80,10 @@ footer {
     border-radius: 5px;
     justify-content: left;
 }
+
+.btn-primary {
+    background-color:#1a806dcb !important;
+    border-color:#266b5fcb !important;
+}
+
+a { color: #1a806dcb ; } 
