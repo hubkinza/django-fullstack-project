@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 # Register your models here.
-from .models import Book,Genre,Language
+from .models import Book
 
 @admin.register(Book)
 
@@ -11,7 +11,8 @@ class BookAdmin(admin.ModelAdmin):
         "author",
         "image",
         "genre",
-        "language",   
+        "language", 
+        "ISBN",
        
     )
     list_filter = ('title', 'author',)

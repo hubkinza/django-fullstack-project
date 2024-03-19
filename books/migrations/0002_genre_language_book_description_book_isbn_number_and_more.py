@@ -32,7 +32,7 @@ class Migration(migrations.Migration):
         ),
         migrations.AddField(
             model_name='book',
-            name='isbn_number',
+            name='ISBN',
             field=models.CharField(blank=True, max_length=13, null=True),
         ),
         migrations.AddField(

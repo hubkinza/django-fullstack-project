@@ -8,26 +8,24 @@ class BookForm(forms.ModelForm):
         fields = [
             "title",
             "author",
+            "ISBN",
             "image",
             "language",
             "genre",
             "description",
+            
+
         ]
 labels = {
             "title": "Book Title",
             "author": "Author",
+            "ISBN":"ISBN",
             "image": "Book Cover",
             "genre": "Genre",
             "language": "Language",
             "descrition": "Brief description of book",
+            
         }
 
-def save(self, commit=True):
-        instance = super(BookForm, self).save(commit=False)
-
-        if commit:
-            instance.save()
-
-        return instance
 
        
