@@ -2,9 +2,10 @@
 from django.views.generic import CreateView
 
 from .models import Book
+from .forms import BookForm
 
 
-class Addbook(CreateView):
+class AddBook(CreateView):
     """Add a new book"""
 
     template_name = "books/addbook.html"
