@@ -74,8 +74,9 @@ footer {
 /* Form */
 
 .form {
-    width: 100%;
+    width: 50%;
     margin: 3% auto;
     box-shadow: var(--smal-box-shadow);
     border-radius: 5px;
+    justify-content: left;
 }
