@@ -33,7 +33,7 @@ SECRET_KEY = 'django-insecure-*6r)zvv4c6i_3+7=mha$^k_-8!3jrqhba^@+ybe9c5jlynqf3+
 
 DEBUG = 'DEBUG' in os.environ
 
-ALLOWED_HOSTS = ['.gitpod.io', '.herokuapp.com']
+ALLOWED_HOSTS = ['.gitpod.io', '.herokuapp.com',]
 
 CSRF_TRUSTED_ORIGINS = ['https://*.gitpod.io', 'https://*.herokuapp.com']
 
@@ -54,6 +54,8 @@ INSTALLED_APPS = [
     'events',
     'crispy_forms',
     'crispy_bootstrap5',
+    'cloudinary',
+    'cloudinary_storage',
 
     
 ]
@@ -84,7 +86,8 @@ ROOT_URLCONF = 'wellread.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+            'DIRS': [os.path.join(BASE_DIR, 'templates')],
+
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -177,3 +180,4 @@ STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
