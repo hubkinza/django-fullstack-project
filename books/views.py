@@ -59,3 +59,24 @@ class BookDetail(DetailView):
     template_name = "books/book_details.html"
     context_object_name = 'book'
 
+@login_required
+def edit_book(request, id):
+    book = get_object_or_404(Book, id=id)
+    if book.user != request.user:
+        messages.error(request, 'Access denied. Please try again.')
+        return redirect('books')
+    # user matches the book user / proceed
+    form = BookForm(request.POST or None, request.FILES, instance=book)
+    if request.method == 'POST':
+        if form.is_valid():
+            form.instance.user = request.user
+            form.save()
+            messages.success(request, 'Book successfully updated!')
+            return redirect('books')
+        messages.error(request, 'An error occurred. Please try again.')
+    form = BookForm(instance=book)
+    template = 'books/edit_book.html'
+    context = {
+        'form': form,
+    }
+    return render(request, template, context)
