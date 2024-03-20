@@ -19,16 +19,18 @@
             <a class="nav-link {% if url_name == 'home' %}active{% endif %}" aria-current="page"
               href="{% url 'home' %}">HOME</a>
           </li>
+         
+
+          <li class="nav-item">
+            <a class="nav-link {% if url_name == 'add_book' %}active{% endif %}" href="{% url 'AddBook' %}">NEW
+              </a>
+          </li>
+
           <li class="nav-item">
             <a class="nav-link {% if url_name == 'books' %}active{% endif %}" aria-current="page"
               href="{% url 'books' %}">BOOKS</a>
           </li>
           <li>
-
-          <li class="nav-item">
-            <a class="nav-link {% if url_name == 'add_book' %}active{% endif %}" href="{% url 'AddBook' %}">ADD A
-              BOOK</a>
-          </li>
           {% if request.user.is_authenticated %}
 
           <li class="nav-item">
