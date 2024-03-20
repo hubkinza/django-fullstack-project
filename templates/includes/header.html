@@ -26,7 +26,7 @@
           <li>
 
           <li class="nav-item">
-            <a class="nav-link {% if url_name == 'add_book' %}active{% endif %}" href="{% url 'add_book' %}">ADD A
+            <a class="nav-link {% if url_name == 'add_book' %}active{% endif %}" href="{% url 'AddBook' %}">ADD A
               BOOK</a>
           </li>
           {% if request.user.is_authenticated %}
