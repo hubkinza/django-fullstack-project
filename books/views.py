@@ -16,7 +16,6 @@ from django.shortcuts import render, get_object_or_404, redirect, reverse
 
 
 
-
 """ View function for adding a new book. """
 @login_required
 def AddBook(request):
@@ -77,7 +76,8 @@ class BookDetail(DetailView):
     context_object_name = 'book'
 
 
-"""View function for Editing book."""
+"""View function for Editing book.
+"""
 @login_required
 def edit_book(request, id):
    
@@ -116,7 +116,8 @@ def edit_book(request, id):
 
 
 
-"""View function for deleting book."""
+"""View function for deleting book.
+"""
 @login_required
 def delete_book(request, id):
     # Retrieve the book object with the given id from the database
