@@ -42,6 +42,8 @@ main {
 .navbar {
     background-color: var(--off-white);
     box-shadow: var(--smal-box-shadow);
+    margin-bottom: 20px !important;
+    
 }
 
 a.nav-link {
@@ -117,3 +119,9 @@ footer {
 }
 a { color:#f9af30 ; } 
 
+/*Book_details page style*/
+
+.container-with-padding {
+    padding-top: 20px; /* Adjust as needed */
+    padding-bottom: 20px; /* Adjust as needed */
+}
