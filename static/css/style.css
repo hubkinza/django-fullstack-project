@@ -110,7 +110,10 @@ footer {
 }
 
 .btn-outline-success{
-    border-color:#f1a625 !important ;
+    border-color:#f9bb4f !important ;
 }
-
+.form-control{
+    border-color:#f9bb4f !important
+}
 a { color:#f9af30 ; } 
+

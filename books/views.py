@@ -56,6 +56,6 @@ class Books(LoginRequiredMixin, ListView):
 
 class BookDetail(DetailView):
     model = Book
-    template_name = "books/book_detail.html"
+    template_name = "books/book_details.html"
     context_object_name = 'book'
 
