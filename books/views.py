@@ -80,3 +80,14 @@ def edit_book(request, id):
         'form': form,
     }
     return render(request, template, context)
+
+@login_required
+def delete_book(request, id):
+    book = get_object_or_404(Book, id=id)
+    if book.user != request.user:
+        messages.error(request, 'Access denied. Please try again.')
+        return redirect('books')
+    # user matches the book user / proceed
+    book.delete()
+    messages.success(request, 'Book successfully deleted.')
+    return redirect('books')

@@ -26,4 +26,3 @@ labels = {
             "descrition": "Brief description of book",
             
         }
-
