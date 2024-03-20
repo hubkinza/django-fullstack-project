@@ -1,5 +1,3 @@
-
-
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.mixins import UserPassesTestMixin, LoginRequiredMixin
@@ -41,5 +39,23 @@ class Books(LoginRequiredMixin, ListView):
     queryset = Book.objects.all()
     template_name = "books/books.html"
     context_object_name = 'books'
+    
+    def get_queryset(self, **kwargs):
+        query = self.request.GET.get('q')
+        if query:
+            books = self.model.objects.filter(
+                Q(title__icontains=query) |
+                Q(author__icontains=query) |
+                Q(genre__icontains=query) |
+                Q(language__icontains=query)
+            )
+        else:
+            books = self.model.objects.all()
+        return books
 
+
+class BookDetail(DetailView):
+    model = Book
+    template_name = "books/book_detail.html"
+    context_object_name = 'book'
 
