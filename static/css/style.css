@@ -6,10 +6,10 @@
 
     /* Colour variables */
     --background: #3f006a0f;
-    --green: #09796489;
+    --green: #ffbf50;
     --black: #000;
-    --off-white: #f6f6f6;
-    --white: #fff;
+    --off-white: #ebe3ee;
+    --white: #ffffff;
     --orange: #ffbf50;
 
     /* Utils */
@@ -37,6 +37,8 @@ main {
 }
 
 /* Header style */
+
+
 .navbar {
     background-color: var(--off-white);
     box-shadow: var(--smal-box-shadow);
@@ -47,13 +49,31 @@ a.nav-link {
 }
 
 img.logo {
-    width: 18.75rem;
+   
+    height: 3rem; 
+    display: block; 
+    
 }
 
 .active {
-    border-bottom: 2px solid var(--green);
+    border-bottom: 2px solid var(--orange);
     font-weight: 500;
 }
+
+img.card-img-top{
+    max-height: 40vh;
+    object-fit: contain;
+}
+
+img.img-fluid.rounded-start {
+    max-height: 40vh;
+}
+
+  
+.card.product .btn {
+    bottom: 0.5rem;
+    max-width: 80%;
+  }
 
 
 /* Footer style*/
@@ -82,9 +102,15 @@ footer {
     justify-content: left;
 }
 
+/* button styles*/
 .btn-primary {
-    background-color:#1a806dcb !important;
-    border-color:#266b5fcb !important;
+    background-color:#fbb232 !important;
+    border-color:#ffbf50 !important;
+    
 }
 
-a { color: #1a806dcb ; } 
+.btn-outline-success{
+    border-color:#f1a625 !important ;
+}
+
+a { color:#f9af30 ; } 
