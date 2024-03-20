@@ -25,10 +25,11 @@
                             </p>
                         </div>
                         <div>
+                            <!--Handling EDIT and DELETE -->
                             {% if request.user == book.user %}
                             <div class="text-center my-3">
-                                <a href="{% url 'edit_book' book.id %}" class="edit_btn btn btn-success w-25">Edit</a>
-                                <a href="#" class="delete_btn btn btn-success w-25" data-bs-toggle="modal"
+                                <a href="{% url 'edit_book' book.id %}" class="edit_btn btn btn-primary w-25">Edit</a>
+                                <a href="#" class="delete_btn btn btn-primary w-25" data-bs-toggle="modal"
                                     data-bs-target="#delete-book-{{ book.id }}">Delete</a>
                             </div>
                             
