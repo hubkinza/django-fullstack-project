@@ -19,8 +19,8 @@ class Book(models.Model):
         null=False,
     )
     ISBN = models.CharField(max_length=13, null=True, blank=True)
-    genre = models.CharField(max_length=300, null=False, blank=False)
-    language = models.CharField(max_length=300, null=False, blank=False)
+    genre = models.CharField(max_length=300, null=True, blank=False)
+    language = models.CharField(max_length=300, null=True, blank=False)
     description = models.TextField(max_length=1000, null=True, blank=False,)
     def __str__(self):
         return self.title
