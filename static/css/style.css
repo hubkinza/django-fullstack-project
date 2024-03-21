@@ -1,4 +1,5 @@
 
+
 :root {
     /** Fonts */
     --title: 'EB Garamond', serif;
@@ -27,7 +28,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: var(--main-font);
- 
+    
 }
 
 main {
@@ -122,6 +123,36 @@ a { color:#f9af30 ; }
 /*Book_details page style*/
 
 .container-with-padding {
-    padding-top: 20px; /* Adjust as needed */
-    padding-bottom: 20px; /* Adjust as needed */
+    padding-top: 10px; /* Adjust as needed */
+    padding-bottom: 10px; /* Adjust as needed */
+}
+
+/* Hero Image */ 
+
+.hero-image {
+    background-image:url("hero/hero.gif");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    display: flex; /* Use flexbox to center content vertically */
+    justify-content: center; /* Center content horizontally */
+    align-items: center;
+}
+
+
+
+/* Hero text*/ 
+
+.hero-text {
+    text-align: center;
+}
+
+/* lead text */
+
+.hero-text .lead {
+   
+    font-size: 2.5em;
 }
