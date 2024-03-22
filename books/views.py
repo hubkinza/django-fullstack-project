@@ -13,12 +13,13 @@ from django.views import generic
 #handle message and redirect error 
 from django.contrib import messages
 from django.shortcuts import render, get_object_or_404, redirect, reverse
+from django.db.models import Q
 
 
-
-""" View function for adding a new book. """
 @login_required
 def AddBook(request):
+    
+    """ View function for adding a new book. """
    
     if request.method == 'POST':
         # If the request method is POST, process the form data
@@ -76,11 +77,10 @@ class BookDetail(DetailView):
     context_object_name = 'book'
 
 
-"""View function for Editing book.
-"""
+
 @login_required
 def edit_book(request, id):
-   
+    """View function for Editing book."""
     book = get_object_or_404(Book, id=id)
     
     # Check if the current user is the owner of the book
@@ -115,11 +115,10 @@ def edit_book(request, id):
     return render(request, template, context)
 
 
-
-"""View function for deleting book.
-"""
 @login_required
+
 def delete_book(request, id):
+    """View function for deleting book."""
     # Retrieve the book object with the given id from the database
     book = get_object_or_404(Book, id=id)
     

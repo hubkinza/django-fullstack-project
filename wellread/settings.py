@@ -158,7 +158,7 @@ USE_TZ = True
 
 #Account Setup 
 
-ACCOUNT_EMAIL_VERIFCATION = 'none'
+ACCOUNT_EMAIL_VERIFICATION = 'none'
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_USERNAME_REQUIRED = True
@@ -187,3 +187,21 @@ CLOUIDNARY_URL = os.environ.get('CLOUDINARY_URL')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+LOGGING = {
+   'version': 1,
+   'disable_existing_loggers': False,
+   'handlers': {
+      'file': {
+         'level': 'DEBUG',
+         'class': 'logging.FileHandler',
+         'filename': 'debug.log',
+      },
+   },
+   'loggers': {
+      'django': {
+         'handlers': ['file'],
+         'level': 'DEBUG',
+         'propagate': True,
+      },
+   },
+}
