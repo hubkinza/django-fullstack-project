@@ -134,3 +134,7 @@ def delete_book(request, id):
     # Display a success message and redirect to the books page
     messages.success(request, 'Book successfully deleted.')
     return redirect('books')
+
+
+
+
