@@ -2,6 +2,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.mixins import UserPassesTestMixin, LoginRequiredMixin
 from django.contrib.auth.decorators import permission_required
+from django.core.exceptions import PermissionDenied
 from django.utils.decorators import method_decorator
 from django.http import HttpResponseRedirect
 from django.views.generic import CreateView, ListView, DetailView, UpdateView
@@ -17,6 +18,7 @@ from django.db.models import Q
 
 
 @login_required
+@permission_required('books.AddBook', raise_exception=True)
 def AddBook(request):
 
     """ View function for adding a new book. """
