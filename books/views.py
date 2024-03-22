@@ -44,11 +44,9 @@ def AddBook(request):
     # Render the AddBook form template with the form
     return render(request, template, context)
 
-
 """
     A ListView class for displaying a list of books.
 """
-
 
 class Books(LoginRequiredMixin, ListView):
 
@@ -61,7 +59,7 @@ class Books(LoginRequiredMixin, ListView):
 
         query = self.request.GET.get('q')
         if query:
-            # Filter books by title, author, genre, and language containing the search query
+           
             books = self.model.objects.filter(
                 Q(title__icontains=query) |
                 Q(author__icontains=query) |

@@ -123,14 +123,14 @@ a { color:#f9af30 ; }
 /*Book_details page style*/
 
 .container-with-padding {
-    padding-top: 10px; /* Adjust as needed */
-    padding-bottom: 10px; /* Adjust as needed */
+    padding-top: 10px; 
+    padding-bottom: 10px;
 }
 
 /* Hero Image */ 
 
 .hero-image {
-    background-image:url("hero/hero.gif");
+    background-image:url("events/templates/Enchanted.jpg");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;

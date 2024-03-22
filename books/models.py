@@ -26,9 +26,5 @@ class Book(models.Model):
     language = models.CharField(max_length=300, null=True, blank=False)
     description = models.TextField(max_length=1000, null=True, blank=False,)
 
-
-
-
-
 def __str__(self):
     return self.title

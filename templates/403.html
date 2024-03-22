@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>403 Error - Access Forbidden</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url("{% static 'images/hills.jpg' %}");
+      background-color:rgba(246, 235, 248, 0.86);
+      background-size: cover;
+      background-position: center;
+      color: rgb(27, 7, 54); 
+      font-family: Arial, sans-serif;
+      text-align: center; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; 
+    }
+    .content {
+      background-color: rgba(251, 250, 251, 0.596); 
+      padding: 20px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <h1>403 - Forbidden</h1>
+    <p>Access to this resource on the server is denied!</p>
+    <p>Please check your URL or contact the site administrator if you believe this is an error.</p>
+    <a href="{% url 'books' %}" class="btn btn-outline-dark btn-lg">Back</a>
+ 
+</body>
+</html>

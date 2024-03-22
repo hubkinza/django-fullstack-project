@@ -1,17 +1,12 @@
-
 {% extends 'base.html' %}
-
-
+{% Load Static %}
 {% block content %}
-<div class="hero-image" >
-  <div class="hero-text">
-    <p class="lead"><strong>Welcome to the Enchanted Library!</strong></p>
-    <p>Explore our collection of books and add them to your wishlist easily.</p>
-     <!-- Add buttons or links to navigate to different sections -->
-     <a href="{% url 'books' %}" class="btn btn-primary btn-lg">Browse Books</a>
-    
-  </div>
+<div class="jumbotron text-center">
+  <h1 class="display-4">Welcome to the Enchanted Library!</h1>
+  <p class="lead">Explore our collection of books and add them to your wishlist easily.</p>
+  <hr class="my-4">
+  <p>Start your journey by browsing our selection:</p>
+  
+  <a href="{% url 'books' %}" class="btn btn-primary btn-lg">Browse Books</a>
 </div>
-
 {% endblock %}
-

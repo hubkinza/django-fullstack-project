@@ -21,14 +21,15 @@
           </li>
          
         
+         
+          
+          {% if request.user.is_authenticated %}
           <li class="nav-item">
             <a class="nav-link {% if url_name == 'books' %}active{% endif %}" aria-current="page"
               href="{% url 'books' %}">BOOKS</a>
           </li>
           <li>
            
-          
-          {% if request.user.is_authenticated %}
 
           <li class="nav-item">
             <a class="nav-link {% if url_name == 'add_book' %}active{% endif %}" href="{% url 'AddBook' %}">ADD
@@ -48,11 +49,13 @@
           </li>
           {% endif %}
         </ul>
+        {% if request.user.is_authenticated %}
         <!-- Form for search bar -->
         <form class="d-flex" role="search" method="GET" action="{% url 'books' %}">
             <input class="form-control me-2" name="q" type="search" placeholder="Enter book name" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
           </form>
+          {% endif %}
       </div>
     </div>
     
