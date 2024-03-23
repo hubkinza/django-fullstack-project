@@ -13,7 +13,6 @@ It consists of a container with a row containing two columns:
 <div class="container text-center">
     <div class="row">
         <div class="col">
-    
                 <div class="row g-0">
                     <div class="col-md-4 mx-auto text-center">
                         <img src="{{ book.image.url }}" alt="{{ book.image_alt }}" class="img-fluid rounded-start">
@@ -23,8 +22,8 @@ It consists of a container with a row containing two columns:
                             <h5 class="card-title">{{ book.title }}</h5>
                             <p class="card-text">
                                 <strong>{{ book.author }}</strong>
-                            
                             </p>
+                            
                             <p class="card-text">
                                 <strong class="">
                                     {{ book.genre}}
@@ -43,7 +42,7 @@ It consists of a container with a row containing two columns:
                                 <a href="{% url 'edit_book' book.id %}" class="edit_btn btn btn-primary w-25">Edit</a>
                                 <a href="#" class="delete_btn btn btn-primary w-25" data-bs-toggle="modal"
                                     data-bs-target="#delete-book-{{ book.id }}">Delete</a>
-                                <a href="{% url 'add_to_wishlist' book.id %}" class="wishlist_btn btn btn-primary w-25">wishlist</a>
+                                
                                     
                             </div>
                             <!-- Modal: confirm deletion -->
@@ -73,7 +72,6 @@ It consists of a container with a row containing two columns:
                        
                     </div>
                 </div>
-            
         </div>
     </div>
 

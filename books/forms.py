@@ -14,8 +14,8 @@ class BookForm(forms.ModelForm):
             "genre",
             "description",
             
-
         ]
+        
 labels = {
             "title": "Book Title",
             "author": "Author",

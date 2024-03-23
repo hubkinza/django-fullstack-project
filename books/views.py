@@ -8,6 +8,7 @@ from django.http import HttpResponseRedirect
 from django.views.generic import CreateView, ListView, DetailView, UpdateView
 from .models import Book
 from .forms import BookForm
+from .models import WishList
 from django.http import HttpResponse
 from django.shortcuts import render
 from django.views import generic
@@ -15,7 +16,6 @@ from django.views import generic
 from django.contrib import messages
 from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.db.models import Q
-
 
 @login_required
 @permission_required('books.AddBook', raise_exception=True)
@@ -127,12 +127,6 @@ def delete_book(request, id):
     messages.success(request, 'Book successfully deleted.')
     return redirect('books')
 
-from .models import WishList
-
-from django.contrib.auth.decorators import login_required
-from django.shortcuts import get_object_or_404, redirect
-from django.contrib import messages
-from .models import WishList
 
 @login_required
 def add_to_wishlist(request, id):
@@ -150,5 +144,12 @@ def add_to_wishlist(request, id):
 
     # Display a success message and redirect
     messages.success(request, 'Book added to your wish list.')
-    return redirect('books', pk=id)
+    return redirect('books')
+
+
+
+def wishlist_page(request):
+    # Retrieve the current user's wishlist items and pass them to the template
+    wishlist_items = WishList.objects.filter(user=request.user)
+    return render(request, 'wishlist.html', {'wishlist_items': wishlist_items})
 

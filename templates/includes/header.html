@@ -20,9 +20,6 @@
               href="{% url 'home' %}">HOME</a>
           </li>
          
-        
-         
-          
           {% if request.user.is_authenticated %}
           <li class="nav-item">
             <a class="nav-link {% if url_name == 'books' %}active{% endif %}" aria-current="page"
