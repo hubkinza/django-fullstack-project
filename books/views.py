@@ -83,14 +83,6 @@ def edit_book(request, id):
     """View function for Editing book."""
     book = get_object_or_404(Book, id=id)
 
-    # Check if the current user is the owner of the book
-    if book.user != request.user:
-        # If not, display an error message and redirect to the books page
-        messages.error(request, 'Access denied. Please try again.')
-        return redirect('books')
-
-    # If the user matches the book user, proceed with editing
-    # Initialize a form for editing the book with data from the request or from the existing book
     form = BookForm(request.POST or None, request.FILES, instance=book)
 
     # Check if the form is submitted via POST method
@@ -135,6 +127,28 @@ def delete_book(request, id):
     messages.success(request, 'Book successfully deleted.')
     return redirect('books')
 
+from .models import WishList
 
+from django.contrib.auth.decorators import login_required
+from django.shortcuts import get_object_or_404, redirect
+from django.contrib import messages
+from .models import WishList
 
+@login_required
+def add_to_wishlist(request, id):
+    
+    book = get_object_or_404(Book, id=id)
+
+    if request.user.wishlist.filter(book=book).exists():
+        # If the book is already in the wish list, display a message and redirect
+        messages.info(request, 'This book is already in your wish list.')
+        return redirect('books')
+
+    # Create a new wish list entry for the current user and the selected book
+    wishlist_entry = WishList(user=request.user, book=book)
+    wishlist_entry.save()
+
+    # Display a success message and redirect
+    messages.success(request, 'Book added to your wish list.')
+    return redirect('books', pk=id)
 

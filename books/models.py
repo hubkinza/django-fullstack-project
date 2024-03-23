@@ -4,6 +4,7 @@ from django_resized import ResizedImageField
 # import user model 
 from django.contrib.auth.models import User
 
+
 from cloudinary.models import CloudinaryField
 from django.conf import settings 
 
@@ -28,3 +29,12 @@ class Book(models.Model):
 
 def __str__(self):
     return self.title
+
+
+class WishList(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='wishlist')
+    book = models.ForeignKey(Book, on_delete=models.CASCADE)  
+
+def __str__(self):
+    return self.title
+

@@ -43,6 +43,8 @@ It consists of a container with a row containing two columns:
                                 <a href="{% url 'edit_book' book.id %}" class="edit_btn btn btn-primary w-25">Edit</a>
                                 <a href="#" class="delete_btn btn btn-primary w-25" data-bs-toggle="modal"
                                     data-bs-target="#delete-book-{{ book.id }}">Delete</a>
+                                <a href="{% url 'add_to_wishlist' book.id %}" class="wishlist_btn btn btn-primary w-25">wishlist</a>
+                                    
                             </div>
                             <!-- Modal: confirm deletion -->
                             <div class="modal fade" id="delete-book-{{ book.id }}" tabindex="-1"

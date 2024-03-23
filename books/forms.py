@@ -1,5 +1,5 @@
 from django import forms
-from .models import Book
+from .models import Book, WishList
 
 """Form to Add a new book"""
 class BookForm(forms.ModelForm):
