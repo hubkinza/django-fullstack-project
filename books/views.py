@@ -4,6 +4,7 @@ from django.contrib.auth.mixins import UserPassesTestMixin, LoginRequiredMixin
 from django.contrib.auth.decorators import permission_required
 from django.core.exceptions import PermissionDenied
 from django.utils.decorators import method_decorator
+from django.views.decorators.csrf import csrf_exempt
 from django.http import HttpResponseRedirect
 from django.views.generic import CreateView, ListView, DetailView, UpdateView
 from .models import Book
@@ -127,7 +128,6 @@ def delete_book(request, id):
     messages.success(request, 'Book successfully deleted.')
     return redirect('books')
 
-
 @login_required
 def add_to_wishlist(request, id):
     
@@ -144,12 +144,11 @@ def add_to_wishlist(request, id):
 
     # Display a success message and redirect
     messages.success(request, 'Book added to your wish list.')
-    return redirect('books')
+    return redirect('books', pk=id)
 
-
-
+@login_required
 def wishlist_page(request):
-    # Retrieve the current user's wishlist items and pass them to the template
-    wishlist_items = WishList.objects.filter(user=request.user)
-    return render(request, 'wishlist.html', {'wishlist_items': wishlist_items})
-
+    # Retrieve the current user's wishlist items
+    wishlist = WishList.objects.filter(user=request.user)
+    print(f'wishlist: {wishlist}')
+    return render(request, 'books/wishlist.html', {'list': wishlist})

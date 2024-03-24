@@ -1,10 +1,9 @@
 from django.contrib import admin
 
 # Register your models here.
-from .models import Book
+from .models import Book, WishList
 
 @admin.register(Book)
-
 class BookAdmin(admin.ModelAdmin):
     list_display = (
         "title",
@@ -17,3 +16,5 @@ class BookAdmin(admin.ModelAdmin):
     )
     list_filter = ('title', 'author',)
         
+
+admin.site.register(WishList)

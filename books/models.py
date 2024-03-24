@@ -32,9 +32,10 @@ def __str__(self):
 
 
 class WishList(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='wishlist')
+    user = models.ForeignKey(User, on_delete=models.CASCADE,null=True, blank=True)
     book = models.ForeignKey(Book, on_delete=models.CASCADE)  
+    slug = models.SlugField(max_length=300, unique=True, null=True, blank=True)
 
 def __str__(self):
-    return self.title
+    return self.book.title
 
