@@ -1,14 +1,23 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
-
-<h1>My Wishlist</h1>
-{% for wishlist in list %}
-    <ul>
-        
-      <li>{{ wishlist.book.title }}</li>
-       
-    </ul>
-{% endfor %}
-
+<div class="container text-center">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <h1 class="my-4">My Wishlist</h1>
+      <div class="card-deck">
+        {% for wishlist in list %}
+        <div class="card mb-4 shadow-sm">
+          <img src="{{ wishlist.book.image.url }}" class="card-img-top" alt="{{ wishlist.book.title }}">
+          <div class="card-body">
+            <h5 class="card-title mb-0"><strong>{{ wishlist.book.title }}</strong></h5>
+            <!-- Any additional information or buttons can go here -->
+            <a href="#" class="btn btn-sm btn-outline-secondary">Remove</a>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}

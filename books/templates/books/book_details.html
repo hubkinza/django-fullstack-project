@@ -36,11 +36,12 @@ It consists of a container with a row containing two columns:
                             </p>
                         </div>
                         <div>
+                            <a href="#" class="wishlist_btn btn btn-primary w-25"> Add to wishlist</a>
                             <!--Handling EDIT and DELETE -->
                             {% if request.user == book.user %}
                             <div class="text-center my-3">
                                 <a href="{% url 'edit_book' book.id %}" class="edit_btn btn btn-primary w-25">Edit</a>
-                                <a href="{% url 'wishlist_page' %}" class="wishlist_btn btn btn-primary w-25">wishlist</a>
+                               
                                 <a href="#" class="delete_btn btn btn-primary w-25" data-bs-toggle="modal"
                                     data-bs-target="#delete-book-{{ book.id }}">Delete</a>
 
