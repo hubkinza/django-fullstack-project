@@ -107,36 +107,29 @@ def edit_book(request, id):
     }
     return render(request, template, context)
 
-
 @login_required
 def delete_book(request, id):
 
     """View function for deleting book."""
     # Retrieve the book object with the given id from the database
     book = get_object_or_404(Book, id=id)
-
-    # Check if the current user is the owner of the book
-    if book.user != request.user:
-        # If not, display an error message and redirect to the books page
-        messages.error(request, 'Access denied. Please try again.')
-        return redirect('books')
-
-    # If the user matches the book user, proceed with deleting the book
     book.delete()
-
     # Display a success message and redirect to the books page
     messages.success(request, 'Book successfully deleted.')
     return redirect('books')
 
+
+
 @login_required
 def add_to_wishlist(request, id):
-    
+ 
+    """View function for Adding book to wishlist."""   
     book = get_object_or_404(Book, id=id)
 
-    if request.user.wishlist.filter(book=book).exists():
-        # If the book is already in the wish list, display a message and redirect
-        messages.info(request, 'This book is already in your wish list.')
-        return redirect('books')
+    # if request.user.wishlist.filter(book=book).exists():
+    if WishList.objects.filter(user=request.user, book=book).exists():  
+     messages.info(request, 'This book is already in your wish list.')
+     return redirect('books')
 
     # Create a new wish list entry for the current user and the selected book
     wishlist_entry = WishList(user=request.user, book=book)
@@ -144,7 +137,31 @@ def add_to_wishlist(request, id):
 
     # Display a success message and redirect
     messages.success(request, 'Book added to your wish list.')
-    return redirect('books', pk=id)
+    # return redirect('books', pk=id)
+    return redirect('books')
+
+
+@login_required
+def delete_from_wishlist(request, id):
+
+    wishlist_entry = WishList(user=request.user, book=book)
+    wishlist_entry.delete()
+    return redirect('books')
+
+@login_required
+def delete_from_wishlist(request, id):
+    """View function for deleting an item from the wishlist."""
+    # Retrieve the wishlist entry with the given id from the database
+    wishlist_entry = get_object_or_404(WishlistEntry, id=id)
+
+    # Delete the wishlist entry
+    wishlist_entry.delete()
+
+    # Display a success message and redirect to the wishlist page
+    messages.success(request, 'Item successfully deleted from wishlist.')
+    return redirect('wishlist')
+
+
 
 @login_required
 def wishlist_page(request):

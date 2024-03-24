@@ -130,7 +130,7 @@ a { color:#f9af30 ; }
 /* Hero Image */ 
 
 .hero-image {
-    background-image:url("events/templates/Enchanted.jpg");
+    background-image:url("https://asset.cloudinary.com/dsg6hqhrr/bb8377b2ac6e95f44d589c21a3bf0bd0");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;

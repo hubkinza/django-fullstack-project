@@ -36,7 +36,7 @@ It consists of a container with a row containing two columns:
                             </p>
                         </div>
                         <div>
-                            <a href="#" class="wishlist_btn btn btn-primary w-25"> Add to wishlist</a>
+                           <a href="{% url 'add_to_wishlist' book.id %}" class="wishlist_btn btn btn-primary w-25"> Add to wishlist</a>
                             <!--Handling EDIT and DELETE -->
                             {% if request.user == book.user %}
                             <div class="text-center my-3">

@@ -6,16 +6,18 @@
     <div class="col-md-8">
       <h1 class="my-4">My Wishlist</h1>
       <div class="card-deck">
+      
         {% for wishlist in list %}
-        <div class="card mb-4 shadow-sm">
-          <img src="{{ wishlist.book.image.url }}" class="card-img-top" alt="{{ wishlist.book.title }}">
-          <div class="card-body">
-            <h5 class="card-title mb-0"><strong>{{ wishlist.book.title }}</strong></h5>
-            <!-- Any additional information or buttons can go here -->
-            <a href="#" class="btn btn-sm btn-outline-secondary">Remove</a>
+          <div class="card mb-4 shadow-sm">
+            <img src="{{ wishlist.book.image.url }}" class="card-img-top" alt="{{ wishlist.book.title }}">
+            <div class="card-body">
+              <h5 class="card-title mb-0"><strong>{{ wishlist.book.title }}</strong></h5>
+              <!-- Any additional information or buttons can go here -->
+              <a href="#" class="btn btn-sm btn-outline-secondary">Remove</a>
+            </div>
           </div>
-        </div>
         {% endfor %}
+      
       </div>
     </div>
   </div>
