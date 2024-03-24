@@ -215,33 +215,39 @@ ___
 
 ![The Enchanted Library]( add screenshot)
 
-- Uses text and images to communicate the site purpose
-- Presents opportunities for further actions 
+- Uses Headings and images to explain what the site is about
+- Offers options for what users can do next such as browse books or Register or Login
+
+
 
     #### User Goals:
-    >   - Understand the main purpose of the website.
-    >   - Have access to registration.
-    >   - Be able to navigate publically available content.
-    >   - Connect with affiliated social media.
-
+    > Understand what the website is for.
+    > Sign up easily.
+    > Explore what's available without logging in.
+    > Connect with the site on social media
+    
     #### Website Goals:
-    >   - Communicate main purpose of the page.
+    >   - Ensure the site looks good and is easy to use throughout.
+    >   - Capture users' interest and encourage them to join.
     >   - Engage users and interest potential memebers.
-    >   - Call to action.
-    >   - Provide an aesthetically pleasing user experience with site-wide consistent styling.
+    >   - Prompt users to take action.
+    >   - Clearly state the website's purpose.
+
+
+
 
 ### Sign Up Page
 
 ![![The Enchanted Library](.JPG)
 
-- Allows users to register so that they can access site content
+- Lets new users create accounts to access the site
 
     #### User Goal:
-    >   - Register
+    > Create an account.
 
     #### Website Goals:
-    >   - Allow user registration
-    >   - Provide an aesthetically pleasing user experience with site-wide consistent styling.
+    > Allow users to sign up.
+    > Ensure the sign-up process fits with the site's design.
 
 
 ### Sign In Page
@@ -249,72 +255,132 @@ ___
 ![![The Enchanted Library](.JPG)
 
 
-- Allows users to sign in
+- Lets registered users log in
 
     #### User Goal:
-    >   - Sign in.
+    >   - Log in.
 
     #### Website Goals:
-    >   - Allows users to sign in so that they can access content.
-    >   - Provide an aesthetically pleasing user experience with site-wide consistent styling.
+    >   - Allow users to sign in to access content.
+    >   - Keep the sign-in process visually consistent with the site.
 
 ### Available Books Page
 
 ![![The Enchanted Library](.JPG)
 
 
-- Shows admin-approved, user-created Books in order of the most recent first.
-- List of Books is paginated by 6 so as not to overwhelm the user.
-- Each card has a link the user can click on for more details. 
-- Available only to view by authenticated users.
+Displays books approved by admins, sorted by newest first.
+Each Card has a link for more details. it is Only accessible to logged-in users.
 
-    #### User Goals:
-    >   - Browse the Books
-    >   - Open the Books to see them in more detail.
+  #### User Goals:
+   >   - Look through available books.
+   >   - Read more about specific books.
 
-    #### Website Goals:
-    >   - Provide a list of Books.
-    >   - Provide some information on each Book in a preview.
-    >   - Provide an aesthetically pleasing user experience with site-wide consistent styling.
+  #### Website Goals:
+   >   - Show a list of available books.
+   >   - Provide previews of books.
+   >   - Maintain a consistent look and feel.
 
 ### Book Detail Page
  
 ![![The Enchanted Library](.JPG)
 
 
-- Shows the details of the run such as how many people the organiser is looking to have join them, the location and what other users are going. 
-- Allows authenticated users to see and write comments on the Book, as well as manage their own comments.
-- Allows authenticated users to say they will attend the Book, also allows them the option of cancelling their own attendance.
-- Allows the Book organiser to manage the Book post.
-- Allows superusers/site admin to delete the post and/or any comments on it.
-- Available only for authenticated users.
 
-    #### User Goals:
-    >   - See the details of books available in the libraray .
-    >   - Add favourite books to their wishlist .
-    >   - Manage and  organise book availbale in the library .
+- Gives details about the Book title genre and a brief summary of the book
+- Contains a Wishlist button so users can add a book to their wishlist
 
+   #### User Goals:
+    >   - User Goals:
+    >   - Read about available books.
+    >   - Add books to their wishlist.
+    >   - 
+   #### Website Goals:
+    >   - Display available books with descriptions
+    >   - Enable admin to edit or delete books.
+    >   - Keep the design consistent and attractive.
+  
 
-    #### Website Goals:
-    >   - Show Avaiable Books.
-    >   - Allows users to read description .
-    >   - Allow  Admin to Edit and delete books.
-    >   - Provide an aesthetically pleasing user experience with site-wide consistent styling.
-
-### Create/Update Post Page
+### Add BOOK
 
 IMAGE
 
-- Allows authenticated users to create a new Book
-- Allows Book organisers to update their own Book.
-- Validates image file input to prBook uploading of file-types outside of those specified.
+- Allows admin users to create a new Book
+
 
     #### User Goals:
     >   - Create a new Book.
     >   - Update existing Books.
 
     #### Website Goals:
-    >   - Allow the user to create/update an Book
-    >   - Provide an aesthetically pleasing user experience with site-wide consistent styling.
+    >   - Let Admin users create or update books.
+    >   - Ensure a visually pleasing experience and consistent design.
+    
+### Wishlist 
+Displays books Added by users to their wishlist 
+
+
+  #### User Goals:
+   >   - Create a custom wishlist
+   >   - View books they added to wishlist
+>      - Remove Books from wishlist
+
+  #### Website Goals:
+   >   - Show a list of books added by user in their wishlist
+   >   - Provide previews of books.
+   >   - Maintain a consistent look and feel.
+
+# Technologies Used
+ - Django
+   Django was used as the python framework in the project.Django all auth was used to handle user authentication and related tasks i.e. sign in, sign up, sign out.
+- Heroku
+  Used to deploy the page and make it publicly available.
+- Elephant SQL 
+  Used for the database during development and in deployment.
+- HTML
+  HTML was the base language used to layout the skeleton of all templates.
+- CSS
+  Custom CSS used to style the page and make the appearance look a little more unique.
+- Bootstrap 5.1.3
+  Used to style HTML, CSS.
+- UX Wing iconshttps://uxwing.com/ 
+  All icons throughout the page.
+- Cloudinary
+  Cloudinary was use to host all images 
+
+
+# Testing 
+## Lighthouse Score
+
+## CSS Validator 
+![image](https://github.com/hubkinza/django-fullstack-project/assets/76822546/e23ef627-4c2d-4e34-ba6e-4fd316ade2c0)
+
+## HTML validator 
+### Index Page
+![image](https://github.com/hubkinza/django-fullstack-project/assets/76822546/fbc27fee-903c-49b8-b695-cabbf8ad8512)
+
+## Python PEP8 style guide 
+
+## Manual Testing
+
+___
+# Credits 
+ - Balsamiq was used to create the wireframes.
+ - The site was developed using GITPOD.
+ - GitHub was used to store my repository.
+ - Screenshot made using Snagit
+ - Guidance on file structure for templates folder from ChatGPT
+ - W3cschool
+ - Fonts were taken from Google Fonts
+ - Mc DEE Walkthrought project for recipe website was refrenced to structure the website https://www.youtube.com/watch?v=sBjbty691eI&list=PLXuTq6OsqZjbCSfiLNb2f1FOs8viArjWy
+ - Inspo for read me https://github.com/dnlbowers/jobs-a-gooden?tab=readme-ov-file#honorable-mentions
+ - https://github.com/hiboibrahim/thebookbooth1/tree/main
+ - I think therefore I BLOG 
+    General references:
+     Geeks for Geeks
+     Stack Overflow
+     Code Institute Learning Platform
+     Django Documentation
+     Bootstrap Documentation
 
 
