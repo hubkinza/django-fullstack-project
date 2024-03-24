@@ -332,7 +332,7 @@ Displays books Added by users to their wishlist
 
 # Technologies Used
  - Django
-   Django was used as the python framework in the project.Django all auth was used to handle user authentication and related tasks i.e. sign in, sign up, sign out.
+   was used as the python framework in the project.Django all auth was used to handle user authentication and related tasks i.e. sign in, sign up, sign out.
 - Heroku
   Used to deploy the page and make it publicly available.
 - Elephant SQL 
@@ -340,13 +340,12 @@ Displays books Added by users to their wishlist
 - HTML
   HTML was the base language used to layout the skeleton of all templates.
 - CSS
-  Custom CSS used to style the page and make the appearance look a little more unique.
+   used to style the page and make the appearance look a little more unique.
 - Bootstrap 5.1.3
   Used to style HTML, CSS.
 - UX Wing iconshttps://uxwing.com/ 
   All icons throughout the page.
-- Cloudinary
-  Cloudinary was use to host all images 
+- Cloudinary was use to host all images 
 
 
 # Testing 
