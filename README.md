@@ -172,7 +172,8 @@ ___
 
 ### Home Page  
 <details><summary>click to expand</summary>
-<img src=.png>
+  ![home page](https://github.com/hubkinza/django-fullstack-project/assets/76822546/ce6278fa-1178-4fd0-bcbe-c013e18f1078)
+
 </details>
 
 
@@ -213,7 +214,8 @@ ___
 
 ### Home Page
 
-![The Enchanted Library]( add screenshot)
+![The Enchanted Library]
+
 
 - Uses Headings and images to explain what the site is about
 - Offers options for what users can do next such as browse books or Register or Login
