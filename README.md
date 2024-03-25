@@ -23,7 +23,7 @@ Update: Administrators maintain homepage content, ensuring visitors are can get 
 Delete: Obsolete books can be removed by the library adminstration.
 
 In essence, Django serves as the backbone of The Enchanted Library, facilitating intuitive Book management and ensuring a seamless user experience.
-The live website can be accessed [here]().
+The live website can be accessed [here](https://hubkinza-capstone-project-f145d100cd87.herokuapp.com/).
 ___
 
 # UX Design
