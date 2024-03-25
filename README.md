@@ -178,30 +178,34 @@ ___
 
 ### Registration and Login Pages
 <details><summary>click to expand</summary>
-<img src=![Admin After sign in](https://github.com/hubkinza/django-fullstack-project/assets/76822546/611ddf34-1c98-44a1-b5c6-d42293475864)
->
+![Register](https://github.com/hubkinza/django-fullstack-project/assets/76822546/1311fcc0-6ffa-486a-81a5-9ad12f34b030)
+![login](https://github.com/hubkinza/django-fullstack-project/assets/76822546/a353a9bf-d044-4d5b-bc4b-5fc802209fe1)
+
+
 </details>
 
 ### Avaiable Books Page
 <details><summary>click to expand</summary>
-<img src=.png>
+[Admin After sign in](https://github.com/hubkinza/django-fullstack-project/assets/76822546/611ddf34-1c98-44a1-b5c6-d42293475864)
 </details>
 
 
 ### Book detail Pages
 <details><summary>click to expand</summary>
-<img src=png>
+![Book detail](https://github.com/hubkinza/django-fullstack-project/assets/76822546/b1b09a20-b8c7-49d9-91d0-5990aaa04023)
+
 </details>
 
 
 ### Add to wishlist Page
 <details><summary>click to expand</summary>
-<img src=.png>
+![Wishlist](https://github.com/hubkinza/django-fullstack-project/assets/76822546/93d65672-9637-4dae-9345-340bc47bfd66)
+
 </details>
 
 ### Signout Page
 <details><summary>click to expand</summary>
-<img src=.png>
+![sign out](https://github.com/hubkinza/django-fullstack-project/assets/76822546/57cf6810-ecc3-4a6f-a320-8859832614ba)
 </details>
 
 
