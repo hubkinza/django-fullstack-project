@@ -173,14 +173,13 @@ ___
 ### Home Page  
 <details><summary>click to expand</summary>
   ![Home page](https://github.com/hubkinza/django-fullstack-project/assets/76822546/86ba85cf-af0d-4655-88c0-7c4ab9690898)
-
-
 </details>
 
 
 ### Registration and Login Pages
 <details><summary>click to expand</summary>
-<img src=>
+<img src=![Admin After sign in](https://github.com/hubkinza/django-fullstack-project/assets/76822546/611ddf34-1c98-44a1-b5c6-d42293475864)
+>
 </details>
 
 ### Avaiable Books Page
@@ -206,10 +205,7 @@ ___
 </details>
 
 
-# Database Design
 
-
-![ERD]()
 
 ## Structure
 
