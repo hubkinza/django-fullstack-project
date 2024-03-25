@@ -1,6 +1,5 @@
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.contrib.auth.mixins import UserPassesTestMixin, LoginRequiredMixin
 from django.contrib.auth.decorators import permission_required
 from django.core.exceptions import PermissionDenied
 from django.utils.decorators import method_decorator
@@ -28,7 +27,8 @@ def AddBook(request):
         # If the request method is POST, process the form data
         form = BookForm(request.POST or None, request.FILES)
         if form.is_valid():
-            # If the form data is valid, save the book and associate it with the current user
+            # If the form data is valid,
+            #  save the book and associate it with the current user
             form.instance.user = request.user
             form.save()
             # Display a success message and redirect to the books page
@@ -45,10 +45,11 @@ def AddBook(request):
     # Render the AddBook form template with the form
     return render(request, template, context)
 
+
+
 """
     A ListView class for displaying a list of books.
 """
-
 class Books(LoginRequiredMixin, ListView):
 
     model = Book
@@ -107,6 +108,7 @@ def edit_book(request, id):
     }
     return render(request, template, context)
 
+
 @login_required
 def delete_book(request, id):
 
@@ -119,19 +121,18 @@ def delete_book(request, id):
     return redirect('books')
 
 
-
 @login_required
 def add_to_wishlist(request, id):
  
     """View function for Adding book to wishlist."""   
     book = get_object_or_404(Book, id=id)
 
-    # if request.user.wishlist.filter(book=book).exists():
+# if request.user.wishlist.filter(book=book).exists():
     if WishList.objects.filter(user=request.user, book=book).exists():  
      messages.info(request, 'This book is already in your wish list.')
      return redirect('books')
 
-    # Create a new wish list entry for the current user and the selected book
+# Create a new wish list entry for the current user and the selected book
     wishlist_entry = WishList(user=request.user, book=book)
     wishlist_entry.save()
 
@@ -143,23 +144,24 @@ def add_to_wishlist(request, id):
 
 @login_required
 def delete_from_wishlist(request, id):
-
-    wishlist_entry = WishList(user=request.user, book=book)
-    wishlist_entry.delete()
-    return redirect('books')
-
-@login_required
-def delete_from_wishlist(request, id):
-    """View function for deleting an item from the wishlist."""
-    # Retrieve the wishlist entry with the given id from the database
-    wishlist_entry = get_object_or_404(WishlistEntry, id=id)
-
+    """View function for removing a book from the wishlist."""
+    
+    book = get_object_or_404(Book, id=id)
+    
+    # Check if the book is in the user's wishlist
+    wishlist_entry = WishList.objects.filter(user=request.user, book=book).first()
+    
+    if not wishlist_entry:
+        # If the book is not in the wishlist, display an error message and redirect
+        messages.error(request, 'This book is not in your wish list.')
+        return redirect('books')
+    
     # Delete the wishlist entry
     wishlist_entry.delete()
-
-    # Display a success message and redirect to the wishlist page
-    messages.success(request, 'Item successfully deleted from wishlist.')
-    return redirect('wishlist')
+    
+    # Display a success message and redirect
+    messages.success(request, 'Book removed from your wish list.')
+    return redirect('books')
 
 
 

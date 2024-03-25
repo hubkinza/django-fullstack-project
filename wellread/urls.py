@@ -22,5 +22,4 @@ urlpatterns = [
     path('', include('events.urls')),
     path('accounts/', include('allauth.urls')),
     path('books/', include('books.urls'))
-   
 ]

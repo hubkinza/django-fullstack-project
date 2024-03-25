@@ -9,7 +9,7 @@
     --background: #3f006a0f;
     --green: #ffbf50;
     --black: #000;
-    --off-white: #ebe3ee;
+    --off-white: #dddade;
     --white: #ffffff;
     --orange: #ffbf50;
 
@@ -28,12 +28,14 @@ body {
     display: flex;
     flex-direction: column;
     font-family: var(--main-font);
+
+
     
 }
 
 main {
     flex: 1 0 auto;
-    background-color:var(--white);
+    background-color:(--white);
     
 }
 
@@ -126,23 +128,6 @@ a { color:#f9af30 ; }
     padding-top: 10px; 
     padding-bottom: 10px;
 }
-
-/* Hero Image */ 
-
-.hero-image {
-    background-image:url("https://asset.cloudinary.com/dsg6hqhrr/bb8377b2ac6e95f44d589c21a3bf0bd0");
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    width: 100%;
-    display: flex; /* Use flexbox to center content vertically */
-    justify-content: center; /* Center content horizontally */
-    align-items: center;
-}
-
-
 
 /* Hero text*/ 
 

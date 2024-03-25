@@ -13,7 +13,7 @@
             <div class="card-body">
               <h5 class="card-title mb-0"><strong>{{ wishlist.book.title }}</strong></h5>
               <!-- Any additional information or buttons can go here -->
-              <a href="#" class="btn btn-sm btn-outline-secondary">Remove</a>
+              <a href="{% url 'delete_from_wishlist' wishlist.book.id %}" class="btn btn-sm btn-outline-secondary">Remove</a>
             </div>
           </div>
         {% endfor %}
