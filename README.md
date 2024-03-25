@@ -172,14 +172,15 @@ ___
 
 ### Home Page  
 <details><summary>click to expand</summary>
-  ![home page](https://github.com/hubkinza/django-fullstack-project/assets/76822546/ce6278fa-1178-4fd0-bcbe-c013e18f1078)
+  ![Home page](https://github.com/hubkinza/django-fullstack-project/assets/76822546/86ba85cf-af0d-4655-88c0-7c4ab9690898)
+
 
 </details>
 
 
 ### Registration and Login Pages
 <details><summary>click to expand</summary>
-<img src=.png>
+<img src=>
 </details>
 
 ### Avaiable Books Page
