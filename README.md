@@ -1,4 +1,5 @@
 # The Enchanted Library 
+![website](https://github.com/hubkinza/django-fullstack-project/assets/76822546/c1948480-9167-425f-979a-51fc5f1ce511)
 
 Welcome to The Enchanted Library, an enchanting digital realm where librarians orchestrate the magic of book management and members embark on captivating reading adventures. The Enchanted Library provides a whimsical platform for librarians to seamlessly organize their collections and for members to curate their own mystical reading journeys.
 
@@ -216,6 +217,8 @@ ___
 ### Home Page
 
 ![The Enchanted Library]
+![image](https://github.com/hubkinza/django-fullstack-project/assets/76822546/ffb139fe-7242-48db-b189-883b00e4b2bc)
+
 
 
 - Uses Headings and images to explain what the site is about
