@@ -33,9 +33,9 @@ SECRET_KEY = 'django-insecure-*6r)zvv4c6i_3+7=mha$^k_-8!3jrqhba^@+ybe9c5jlynqf3+
 
 DEBUG = 'DEBUG' in os.environ
 
-ALLOWED_HOSTS = ['.gitpod.io', '.herokuapp.com',]
+ALLOWED_HOSTS = ['.gitpod.io', '.herokuapp.com','.codeinstitute-ide.net']
 
-CSRF_TRUSTED_ORIGINS = ['https://*.gitpod.io', 'https://*.herokuapp.com']
+CSRF_TRUSTED_ORIGINS = ['https://*.gitpod.io', 'https://*.herokuapp.com','https://*.codeinstitute-ide.net']
 # Application definition
 
 INSTALLED_APPS = [
