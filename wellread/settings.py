@@ -54,8 +54,6 @@ INSTALLED_APPS = [
     'events',
     'crispy_forms',
     'crispy_bootstrap5',
-    'cloudinary_storage',
-    'cloudinary',
     'books',
 ]
 
