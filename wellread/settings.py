@@ -27,7 +27,8 @@ TEMPLATES_DIR = BASE_DIR / 'templates'
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-*6r)zvv4c6i_3+7=mha$^k_-8!3jrqhba^@+ybe9c5jlynqf3+'
+SECRET_KEY = os.environ.get("SECRET_KEY")
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
@@ -45,14 +46,16 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'cloudinary_storage',
+    'cloudinary',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
     'events',
     'crispy_forms',
     'crispy_bootstrap5',
-    'cloudinary',
     'cloudinary_storage',
+    'cloudinary',
     'books',
 ]
 
