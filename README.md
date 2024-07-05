@@ -369,7 +369,58 @@ Displays books Added by users to their wishlist
 ## Python PEP8 style guide 
 
 ## Manual Testing
+## Deployment
+# Github
+The base environment for this project was created by navigating to the gitpod CI template and clicking 'Use this template'.
 
+After making a new respository for my  project from the CI template, I created a workspace in gitpod where all of my development took place.
+
+Development Environment Set-Up
+the enchanted Library makes use of many Django packages. For ease of set-up I pasted the contents of the requirements.txt file from our third hackathon into my workspace and used the following command to install all base packages I believed I needed at the start of the project:
+
+pip3 install -r requirements.txt
+
+I then created a Procfile and added a line of code for Heroku deployment: web: gunicorn wellread.wsgi
+
+After doing this I set up external services(covered below) in gitignored env.py, added any packages to INSTALLED_APPS in settings.py where necessary and then used the following commands to perform any database migrations (these steps were repeated later in development as I developed my own models):
+
+python3 manage.py makemigrations
+
+python3 manage.py migrate
+
+To commit the changes to my Github repo I used the following terminal commands:
+
+git add . git commit -m "commit message here" git push
+
+I had my basic project and app structure in place before preparing for early Heroku deployment
+
+Heroku
+Heroku is used to host the enchanted library . Heroku is a container-based cloud Platform for building, deploying and managing apps. This project was first deployed to Heroku in the very early stages following app structure setup.
+
+The steps are as follows:
+
+Login or create an account on Heroku.
+
+Click new in the top right corner and choose create new app.
+
+Choose a unique app name and your region and click create app.
+
+Navigate to the Settings tab, and click Reveal Config Vars.
+
+Setup External Services:
+
+Log in or create an account on Cloudinary. Navigate to the Dashboard on Cloudinary, copy and store the value of the 'API Environment Variable" ( begins with cloudinary:// ) and paste it into your config vars CLOUDINARY_URL = cloudinary://<your_value>
+
+Log in or create an account on ElephantSQL. Create a new instance. Select the free plan Tiny Turtle and leave the tags blank. Select the region and choose the nearest data centre to your location or the one that works. Click 'review' and check the details and click the button to create the instance. Click on the instance you created copy the ElephantSQL database URL from the instance details and paste it into your config vars DATABASE_URL = postgres://<your_value>
+
+Navigate to the Deploy tab and select GitHub as a deployment method. Find the repository to connect to and choose the branch to deploy. Wait for the app to build, click on View.
+
+Towards the end of the project I regenerated the SECRET_KEY and did the following;
+
+Add Django secret key to config vars SECRET_KEY
+
+
+Prior to submitting the finished project I ensured I had DEBUG=False in settings.py
 ___
 # Credits 
  - Balsamiq was used to create the wireframes.
