@@ -14541,3 +14541,398 @@ File /workspace/.pip-modules/lib/python3.9/site-packages/django/contrib/sessions
 File /workspace/.pip-modules/lib/python3.9/site-packages/allauth/account/migrations/0005_emailaddress_idx_upper_email.py first seen with mtime 1719497231.7817042
 File /workspace/.pip-modules/lib/python3.9/site-packages/allauth/socialaccount/migrations/0004_app_provider_id_settings.py first seen with mtime 1719497231.8137038
 File /workspace/.pip-modules/lib/python3.9/site-packages/allauth/account/migrations/__init__.py first seen with mtime 1719497231.7817042
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2024-07-05T10:38:21.534479+00:00'::timestamptz AND "django_session"."session_key" = '0ezdyj4znkej7eixdu0pznfacxhhpk3y') LIMIT 21; args=(datetime.datetime(2024, 7, 5, 10, 38, 21, 534479, tzinfo=datetime.timezone.utc), '0ezdyj4znkej7eixdu0pznfacxhhpk3y'); alias=default
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4181
+"GET /static/admin/css/base.css HTTP/1.1" 200 21310
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2929
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2694
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 18559
+"GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+"GET /static/admin/css/login.css HTTP/1.1" 200 958
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/workspace/.pip-modules/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/workspace/.pip-modules/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/workspace/.pip-modules/lib/python3.9/site-packages/django/core/handlers/base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/workspace/.pip-modules/lib/python3.9/site-packages/django/urls/resolvers.py", line 702, in resolve
+    raise Resolver404({"tried": tried, "path": new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'events.urls' from '/workspace/django-fullstack-project/events/urls.py'> (None:None) ''>, <URLPattern '' [name='home']>], [<URLResolver <module 'allauth.urls' from '/workspace/.pip-modules/lib/python3.9/site-packages/allauth/urls.py'> (None:None) 'accounts/'>], [<URLResolver <module 'books.urls' from '/workspace/django-fullstack-project/books/urls.py'> (None:None) 'books/'>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/.pip-modules/lib/python3.9/site-packages/django/template/base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/.pip-modules/lib/python3.9/site-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/.pip-modules/lib/python3.9/site-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/.pip-modules/lib/python3.9/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/workspace/.pip-modules/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/workspace/.pip-modules/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/workspace/.pip-modules/lib/python3.9/site-packages/django/core/handlers/base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/workspace/.pip-modules/lib/python3.9/site-packages/django/urls/resolvers.py", line 702, in resolve
+    raise Resolver404({"tried": tried, "path": new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'events.urls' from '/workspace/django-fullstack-project/events/urls.py'> (None:None) ''>, <URLPattern '' [name='home']>], [<URLResolver <module 'allauth.urls' from '/workspace/.pip-modules/lib/python3.9/site-packages/allauth/urls.py'> (None:None) 'accounts/'>], [<URLResolver <module 'books.urls' from '/workspace/django-fullstack-project/books/urls.py'> (None:None) 'books/'>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/.pip-modules/lib/python3.9/site-packages/django/template/base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/.pip-modules/lib/python3.9/site-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/.pip-modules/lib/python3.9/site-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/.pip-modules/lib/python3.9/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'allauth.urls' from '/workspace/.pip-modules/lib/python3.9/site-packages/allauth/urls.py'> (None:None) 'accounts/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/workspace/.pip-modules/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/workspace/.pip-modules/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/workspace/.pip-modules/lib/python3.9/site-packages/django/core/handlers/base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/workspace/.pip-modules/lib/python3.9/site-packages/django/urls/resolvers.py", line 702, in resolve
+    raise Resolver404({"tried": tried, "path": new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'events.urls' from '/workspace/django-fullstack-project/events/urls.py'> (None:None) ''>, <URLPattern '' [name='home']>], [<URLResolver <module 'allauth.urls' from '/workspace/.pip-modules/lib/python3.9/site-packages/allauth/urls.py'> (None:None) 'accounts/'>], [<URLResolver <module 'books.urls' from '/workspace/django-fullstack-project/books/urls.py'> (None:None) 'books/'>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/.pip-modules/lib/python3.9/site-packages/django/template/base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/.pip-modules/lib/python3.9/site-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/.pip-modules/lib/python3.9/site-packages/django/template/base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/.pip-modules/lib/python3.9/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'books.urls' from '/workspace/django-fullstack-project/books/urls.py'> (None:None) 'books/'>
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2538
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/charset_normalizer/models.py first seen with mtime 1719496741.0
+File /workspace/.pip-modules/lib/python3.9/site-packages/django/contrib/auth/context_processors.py first seen with mtime 1719497230.5377212
+File /workspace/.pip-modules/lib/python3.9/site-packages/django/core/management/sql.py first seen with mtime 1719497230.833717
+File /workspace/.pip-modules/lib/python3.9/site-packages/django/contrib/messages/context_processors.py first seen with mtime 1719497230.7097187
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/requests/auth.py first seen with mtime 1719496742.0
+File /workspace/.pip-modules/lib/python3.9/site-packages/cloudinary_storage/app_settings.py first seen with mtime 1719497231.7297049
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/netrc.py first seen with mtime 1719496714.0
+File /workspace/.pip-modules/lib/python3.9/site-packages/django/template/context_processors.py first seen with mtime 1719497230.8737166
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/requests/hooks.py first seen with mtime 1719496742.0
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/unittest/util.py first seen with mtime 1719496716.0
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/requests/packages.py first seen with mtime 1719496742.0
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/unittest/signals.py first seen with mtime 1719496716.0
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/idna/intranges.py first seen with mtime 1719496740.0
+File /workspace/.pip-modules/lib/python3.9/site-packages/django/conf/locale/en/__init__.py first seen with mtime 1719497230.3457236
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/jinja2/utils.py first seen with mtime 1719496743.0
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/jinja2/bccache.py first seen with mtime 1719496743.0
+File /workspace/.pip-modules/lib/python3.9/site-packages/django/contrib/sessions/serializers.py first seen with mtime 1719497230.761718
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/requests/exceptions.py first seen with mtime 1719496742.0
+File /workspace/.pip-modules/lib/python3.9/site-packages/django/test/signals.py first seen with mtime 1719497230.8817165
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/xml/dom/NodeFilter.py first seen with mtime 1719496716.0
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/charset_normalizer/constant.py first seen with mtime 1719496741.0
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/markupsafe/__init__.py first seen with mtime 1719496740.0
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/jinja2/tests.py first seen with mtime 1719496743.0
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/requests/compat.py first seen with mtime 1719496742.0
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/jinja2/compiler.py first seen with mtime 1719496743.0
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/jinja2/parser.py first seen with mtime 1719496743.0
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/idna/core.py first seen with mtime 1719496740.0
+File /workspace/.pip-modules/lib/python3.9/site-packages/django/conf/locale/en/formats.py first seen with mtime 1719497230.3457236
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/jinja2/async_utils.py first seen with mtime 1719496743.0
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/markupsafe/_speedups.cpython-39-x86_64-linux-gnu.so first seen with mtime 1719496740.0
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/xml/dom/domreg.py first seen with mtime 1719496716.0
+File /workspace/.pip-modules/lib/python3.9/site-packages/django/test/utils.py first seen with mtime 1719497230.8817165
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/charset_normalizer/cd.py first seen with mtime 1719496741.0
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/idna/package_data.py first seen with mtime 1719496740.0
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/xml/dom/minidom.py first seen with mtime 1719496716.0
+File /workspace/.pip-modules/lib/python3.9/site-packages/cloudinary_storage/helpers.py first seen with mtime 1719497231.7337048
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/requests/_internal_utils.py first seen with mtime 1719496742.0
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/charset_normalizer/api.py first seen with mtime 1719496741.0
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/requests/utils.py first seen with mtime 1719496742.0
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/jinja2/filters.py first seen with mtime 1719496743.0
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/requests/adapters.py first seen with mtime 1719496742.0
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/charset_normalizer/md__mypyc.cpython-39-x86_64-linux-gnu.so first seen with mtime 1719496741.0
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/jinja2/__init__.py first seen with mtime 1719496743.0
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/idna/__init__.py first seen with mtime 1719496740.0
+File /workspace/.pip-modules/lib/python3.9/site-packages/django/contrib/messages/storage/cookie.py first seen with mtime 1719497230.7097187
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/unittest/suite.py first seen with mtime 1719496716.0
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/requests/models.py first seen with mtime 1719496742.0
+File /workspace/.pip-modules/lib/python3.9/site-packages/django/contrib/messages/storage/session.py first seen with mtime 1719497230.7097187
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/unittest/main.py first seen with mtime 1719496716.0
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/unittest/__init__.py first seen with mtime 1719496716.0
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/charset_normalizer/version.py first seen with mtime 1719496741.0
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/charset_normalizer/utils.py first seen with mtime 1719496741.0
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/idna/idnadata.py first seen with mtime 1719496740.0
+File /workspace/.pip-modules/lib/python3.9/site-packages/django/test/__init__.py first seen with mtime 1719497230.8817165
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/unittest/result.py first seen with mtime 1719496716.0
+File /workspace/.pip-modules/lib/python3.9/site-packages/django/test/client.py first seen with mtime 1719497230.8817165
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/jinja2/lexer.py first seen with mtime 1719496743.0
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/lib-dynload/_multibytecodec.cpython-39-x86_64-linux-gnu.so first seen with mtime 1719496705.0
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/charset_normalizer/legacy.py first seen with mtime 1719496741.0
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/xml/dom/xmlbuilder.py first seen with mtime 1719496716.0
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/jinja2/defaults.py first seen with mtime 1719496743.0
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/requests/__init__.py first seen with mtime 1719496742.0
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/requests/certs.py first seen with mtime 1719496742.0
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/jinja2/environment.py first seen with mtime 1719496743.0
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/jinja2/runtime.py first seen with mtime 1719496743.0
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/requests/sessions.py first seen with mtime 1719496742.0
+File /workspace/.pip-modules/lib/python3.9/site-packages/django/contrib/messages/storage/fallback.py first seen with mtime 1719497230.7097187
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/jinja2/optimizer.py first seen with mtime 1719496743.0
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/unittest/case.py first seen with mtime 1719496716.0
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/xml/dom/minicompat.py first seen with mtime 1719496716.0
+File /workspace/.pip-modules/lib/python3.9/site-packages/django/contrib/admin/forms.py first seen with mtime 1719497230.401723
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/jinja2/loaders.py first seen with mtime 1719496743.0
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/jinja2/idtracking.py first seen with mtime 1719496743.0
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/unittest/runner.py first seen with mtime 1719496716.0
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/http/cookiejar.py first seen with mtime 1719496715.0
+File /workspace/.pip-modules/lib/python3.9/site-packages/cloudinary/api.py first seen with mtime 1719497230.2137256
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/jinja2/visitor.py first seen with mtime 1719496743.0
+File /workspace/.pip-modules/lib/python3.9/site-packages/cloudinary_storage/storage.py first seen with mtime 1719497231.7337048
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/jinja2/_identifier.py first seen with mtime 1719496743.0
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/charset_normalizer/md.cpython-39-x86_64-linux-gnu.so first seen with mtime 1719496741.0
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/requests/__version__.py first seen with mtime 1719496742.0
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/requests/status_codes.py first seen with mtime 1719496742.0
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/xml/dom/__init__.py first seen with mtime 1719496716.0
+File /workspace/.pip-modules/lib/python3.9/site-packages/django/test/testcases.py first seen with mtime 1719497230.8817165
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/jinja2/exceptions.py first seen with mtime 1719496743.0
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/charset_normalizer/__init__.py first seen with mtime 1719496741.0
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/requests/structures.py first seen with mtime 1719496742.0
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/unittest/loader.py first seen with mtime 1719496716.0
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/shlex.py first seen with mtime 1719496714.0
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/requests/api.py first seen with mtime 1719496742.0
+File /workspace/.pip-modules/lib/python3.9/site-packages/django/test/html.py first seen with mtime 1719497230.8817165
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/requests/cookies.py first seen with mtime 1719496742.0
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/site-packages/jinja2/nodes.py first seen with mtime 1719496743.0
+(0.002) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'tester' LIMIT 21; args=('tester',); alias=default
+"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4343
+(0.006) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+(0.001) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+(0.003) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'gitpod' LIMIT 21; args=('gitpod',); alias=default
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'Superkinza' LIMIT 21; args=('Superkinza',); alias=default
+(0.004) INSERT INTO "auth_user" ("password", "last_login", "is_superuser", "username", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined") VALUES ('pbkdf2_sha256$600000$ZOQKoq3fWOD2v65S2xsWoR$cSfC9JZ4Qzor9O5NK3AJ7hc9OaP/7px/4b0TX/TiMSQ=', NULL, true, 'Superkinza', '', '', 'Superkinza@gmail.com', true, true, '2024-07-05T10:44:52.660287+00:00'::timestamptz) RETURNING "auth_user"."id"; args=('pbkdf2_sha256$600000$ZOQKoq3fWOD2v65S2xsWoR$cSfC9JZ4Qzor9O5NK3AJ7hc9OaP/7px/4b0TX/TiMSQ=', None, True, 'Superkinza', '', '', 'Superkinza@gmail.com', True, True, datetime.datetime(2024, 7, 5, 10, 44, 52, 660287, tzinfo=datetime.timezone.utc)); alias=default
+(0.002) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'Superkinza' LIMIT 21; args=('Superkinza',); alias=default
+(0.001) SELECT 1 AS "a" FROM "django_session" WHERE "django_session"."session_key" = 'aj8aygk4009s2jjp7esk5gu7wfjgueua' LIMIT 1; args=(1, 'aj8aygk4009s2jjp7esk5gu7wfjgueua'); alias=default
+(0.000) BEGIN; args=None; alias=default
+(0.001) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") VALUES ('aj8aygk4009s2jjp7esk5gu7wfjgueua', 'e30:1sPgRA:x055Pbh450AZLQ4P92TgPLGo5OBaHkmKC3iQYudk0nE', '2024-07-19T10:45:08.459865+00:00'::timestamptz); args=('aj8aygk4009s2jjp7esk5gu7wfjgueua', 'e30:1sPgRA:x055Pbh450AZLQ4P92TgPLGo5OBaHkmKC3iQYudk0nE', datetime.datetime(2024, 7, 19, 10, 45, 8, 459865, tzinfo=datetime.timezone.utc)); alias=default
+(0.003) COMMIT; args=None; alias=default
+(0.003) UPDATE "auth_user" SET "last_login" = '2024-07-05T10:45:08.464425+00:00'::timestamptz WHERE "auth_user"."id" = 13; args=(datetime.datetime(2024, 7, 5, 10, 45, 8, 464425, tzinfo=datetime.timezone.utc), 13); alias=default
+(0.000) BEGIN; args=None; alias=default
+(0.001) UPDATE "django_session" SET "session_data" = '.eJxVjjsOwjAQRO_iGlms_0tJzxksr73BAeRIcVIh7k4ipYB23pvRvEVM61Lj2nmOYxEXAVqcfkNK-cltJ-WR2n2SeWrLPJLcFXnQLm9T4df1cP8Gaup1a3vjzwgaQ8ZsvSLP6DW4FJhsdohgHGu0CEWFIbAhAgdWs0rGD7y9-nwB14w3Cw:1sPgRA:TAya6o1lv-ZPznQMGP-F14eYLCesmSzlQkUoYCVZWxE', "expire_date" = '2024-07-19T10:45:08.468348+00:00'::timestamptz WHERE "django_session"."session_key" = 'aj8aygk4009s2jjp7esk5gu7wfjgueua'; args=('.eJxVjjsOwjAQRO_iGlms_0tJzxksr73BAeRIcVIh7k4ipYB23pvRvEVM61Lj2nmOYxEXAVqcfkNK-cltJ-WR2n2SeWrLPJLcFXnQLm9T4df1cP8Gaup1a3vjzwgaQ8ZsvSLP6DW4FJhsdohgHGu0CEWFIbAhAgdWs0rGD7y9-nwB14w3Cw:1sPgRA:TAya6o1lv-ZPznQMGP-F14eYLCesmSzlQkUoYCVZWxE', datetime.datetime(2024, 7, 19, 10, 45, 8, 468348, tzinfo=datetime.timezone.utc), 'aj8aygk4009s2jjp7esk5gu7wfjgueua'); alias=default
+(0.003) COMMIT; args=None; alias=default
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2024-07-05T10:45:08.505416+00:00'::timestamptz AND "django_session"."session_key" = 'aj8aygk4009s2jjp7esk5gu7wfjgueua') LIMIT 21; args=(datetime.datetime(2024, 7, 5, 10, 45, 8, 505416, tzinfo=datetime.timezone.utc), 'aj8aygk4009s2jjp7esk5gu7wfjgueua'); alias=default
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 13 LIMIT 21; args=(13,); alias=default
+(0.003) SELECT "django_admin_log"."id", "django_admin_log"."action_time", "django_admin_log"."user_id", "django_admin_log"."content_type_id", "django_admin_log"."object_id", "django_admin_log"."object_repr", "django_admin_log"."action_flag", "django_admin_log"."change_message", "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined", "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_admin_log" INNER JOIN "auth_user" ON ("django_admin_log"."user_id" = "auth_user"."id") LEFT OUTER JOIN "django_content_type" ON ("django_admin_log"."content_type_id" = "django_content_type"."id") WHERE "django_admin_log"."user_id" = 13 ORDER BY "django_admin_log"."action_time" DESC LIMIT 10; args=(13,); alias=default
+"GET /admin/ HTTP/1.1" 200 8990
+"GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2024-07-05T10:45:34.398450+00:00'::timestamptz AND "django_session"."session_key" = 'aj8aygk4009s2jjp7esk5gu7wfjgueua') LIMIT 21; args=(datetime.datetime(2024, 7, 5, 10, 45, 34, 398450, tzinfo=datetime.timezone.utc), 'aj8aygk4009s2jjp7esk5gu7wfjgueua'); alias=default
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 13 LIMIT 21; args=(13,); alias=default
+(0.000) BEGIN; args=None; alias=default
+(0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'books' AND "django_content_type"."model" = 'book') LIMIT 21; args=('books', 'book'); alias=default
+(0.000) COMMIT; args=None; alias=default
+(0.003) DECLARE "_django_curs_140058547975744_sync_1" NO SCROLL CURSOR WITH HOLD FOR SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" ORDER BY "auth_user"."username" ASC; args=(); alias=default
+"GET /admin/books/book/add/ HTTP/1.1" 200 16105
+"GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 292458
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+"GET /static/admin/js/core.js HTTP/1.1" 200 5682
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+"GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+"GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2024-07-05T10:45:34.541771+00:00'::timestamptz AND "django_session"."session_key" = 'aj8aygk4009s2jjp7esk5gu7wfjgueua') LIMIT 21; args=(datetime.datetime(2024, 7, 5, 10, 45, 34, 541771, tzinfo=datetime.timezone.utc), 'aj8aygk4009s2jjp7esk5gu7wfjgueua'); alias=default
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 13 LIMIT 21; args=(13,); alias=default
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+"GET /static/admin/css/widgets.css HTTP/1.1" 200 11921
+"GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2024-07-05T10:47:24.829875+00:00'::timestamptz AND "django_session"."session_key" = 'aj8aygk4009s2jjp7esk5gu7wfjgueua') LIMIT 21; args=(datetime.datetime(2024, 7, 5, 10, 47, 24, 829875, tzinfo=datetime.timezone.utc), 'aj8aygk4009s2jjp7esk5gu7wfjgueua'); alias=default
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 13 LIMIT 21; args=(13,); alias=default
+(0.000) BEGIN; args=None; alias=default
+File /workspace/.pip-modules/lib/python3.9/site-packages/PIL/IcoImagePlugin.py first seen with mtime 1719497229.9377294
+File /workspace/.pip-modules/lib/python3.9/site-packages/PIL/WebPImagePlugin.py first seen with mtime 1719497229.9137297
+File /workspace/.pip-modules/lib/python3.9/site-packages/PIL/SgiImagePlugin.py first seen with mtime 1719497229.9457293
+File /workspace/.pip-modules/lib/python3.9/site-packages/PIL/PcdImagePlugin.py first seen with mtime 1719497229.9457293
+File /workspace/.pip-modules/lib/python3.9/site-packages/PIL/_webp.cpython-39-x86_64-linux-gnu.so first seen with mtime 1719497229.9177296
+File /workspace/.pip-modules/lib/python3.9/site-packages/PIL/PngImagePlugin.py first seen with mtime 1719497229.9377294
+File /workspace/.pip-modules/lib/python3.9/site-packages/PIL/XVThumbImagePlugin.py first seen with mtime 1719497229.9417293
+File /workspace/.pip-modules/lib/python3.9/site-packages/PIL/Jpeg2KImagePlugin.py first seen with mtime 1719497229.9417293
+File /workspace/.pip-modules/lib/python3.9/site-packages/PIL/MspImagePlugin.py first seen with mtime 1719497229.9177296
+File /workspace/.pip-modules/lib/python3.9/site-packages/PIL/PcxImagePlugin.py first seen with mtime 1719497229.9417293
+File /workspace/.pip-modules/lib/python3.9/site-packages/PIL/GifImagePlugin.py first seen with mtime 1719497229.9217296
+File /workspace/.pip-modules/lib/python3.9/site-packages/PIL/Hdf5StubImagePlugin.py first seen with mtime 1719497229.9217296
+File /workspace/.pip-modules/lib/python3.9/site-packages/PIL/IcnsImagePlugin.py first seen with mtime 1719497229.9417293
+File /workspace/.pip-modules/lib/python3.9/site-packages/PIL/TgaImagePlugin.py first seen with mtime 1719497229.9417293
+File /workspace/.pip-modules/lib/python3.9/site-packages/PIL/GbrImagePlugin.py first seen with mtime 1719497229.9137297
+File /workspace/.pip-modules/lib/python3.9/site-packages/PIL/ImImagePlugin.py first seen with mtime 1719497229.9457293
+File /workspace/.pip-modules/lib/python3.9/site-packages/PIL/MpoImagePlugin.py first seen with mtime 1719497229.9137297
+File /workspace/.pip-modules/lib/python3.9/site-packages/PIL/ImtImagePlugin.py first seen with mtime 1719497229.9457293
+File /workspace/.pip-modules/lib/python3.9/site-packages/PIL/BlpImagePlugin.py first seen with mtime 1719497229.9217296
+File /workspace/.pip-modules/lib/python3.9/site-packages/PIL/DdsImagePlugin.py first seen with mtime 1719497229.9177296
+File /workspace/.pip-modules/lib/python3.9/site-packages/PIL/DcxImagePlugin.py first seen with mtime 1719497229.9177296
+File /workspace/.pip-modules/lib/python3.9/site-packages/PIL/CurImagePlugin.py first seen with mtime 1719497229.9457293
+File /workspace/.pip-modules/lib/python3.9/site-packages/PIL/PsdImagePlugin.py first seen with mtime 1719497229.9177296
+File /workspace/.pip-modules/lib/python3.9/site-packages/PIL/FliImagePlugin.py first seen with mtime 1719497229.9137297
+File /workspace/.pip-modules/lib/python3.9/site-packages/PIL/MpegImagePlugin.py first seen with mtime 1719497229.9217296
+File /workspace/.pip-modules/lib/python3.9/site-packages/PIL/SunImagePlugin.py first seen with mtime 1719497229.9217296
+File /workspace/.pip-modules/lib/python3.9/site-packages/PIL/ImageChops.py first seen with mtime 1719497229.9137297
+File /workspace/.pip-modules/lib/python3.9/site-packages/PIL/BufrStubImagePlugin.py first seen with mtime 1719497229.9137297
+File /workspace/.pip-modules/lib/python3.9/site-packages/PIL/PalmImagePlugin.py first seen with mtime 1719497229.9177296
+File /workspace/.pip-modules/lib/python3.9/site-packages/PIL/PdfImagePlugin.py first seen with mtime 1719497229.9377294
+File /workspace/.pip-modules/lib/python3.9/site-packages/PIL/PdfParser.py first seen with mtime 1719497229.9457293
+File /workspace/.pip-modules/lib/python3.9/site-packages/PIL/IptcImagePlugin.py first seen with mtime 1719497229.9217296
+File /workspace/.pip-modules/lib/python3.9/site-packages/PIL/GribStubImagePlugin.py first seen with mtime 1719497229.9137297
+File /workspace/.pip-modules/lib/python3.9/site-packages/PIL/JpegImagePlugin.py first seen with mtime 1719497229.9137297
+File /workspace/.pip-modules/lib/python3.9/site-packages/PIL/WmfImagePlugin.py first seen with mtime 1719497229.9177296
+File /workspace/.pip-modules/lib/python3.9/site-packages/PIL/features.py first seen with mtime 1719497229.9497292
+File /workspace/.pip-modules/lib/python3.9/site-packages/PIL/McIdasImagePlugin.py first seen with mtime 1719497229.9417293
+File /workspace/.pip-modules/lib/python3.9/site-packages/PIL/EpsImagePlugin.py first seen with mtime 1719497229.9377294
+File /workspace/.pip-modules/lib/python3.9/site-packages/PIL/FitsImagePlugin.py first seen with mtime 1719497229.9417293
+File /home/gitpod/.pyenv/versions/3.9.17/lib/python3.9/lib-dynload/mmap.cpython-39-x86_64-linux-gnu.so first seen with mtime 1719496698.0
+File /workspace/.pip-modules/lib/python3.9/site-packages/PIL/ImageSequence.py first seen with mtime 1719497229.9377294
+File /workspace/.pip-modules/lib/python3.9/site-packages/PIL/TiffImagePlugin.py first seen with mtime 1719497229.9177296
+File /workspace/.pip-modules/lib/python3.9/site-packages/PIL/FtexImagePlugin.py first seen with mtime 1719497229.9457293
+File /workspace/.pip-modules/lib/python3.9/site-packages/PIL/PpmImagePlugin.py first seen with mtime 1719497229.9177296
+File /workspace/.pip-modules/lib/python3.9/site-packages/PIL/QoiImagePlugin.py first seen with mtime 1719497229.9417293
+File /workspace/.pip-modules/lib/python3.9/site-packages/PIL/_imagingmath.cpython-39-x86_64-linux-gnu.so first seen with mtime 1719497229.9417293
+File /workspace/.pip-modules/lib/python3.9/site-packages/PIL/JpegPresets.py first seen with mtime 1719497229.9377294
+File /workspace/.pip-modules/lib/python3.9/site-packages/PIL/ImageMath.py first seen with mtime 1719497229.9457293
+File /workspace/.pip-modules/lib/python3.9/site-packages/PIL/BmpImagePlugin.py first seen with mtime 1719497229.9177296
+File /workspace/.pip-modules/lib/python3.9/site-packages/PIL/XbmImagePlugin.py first seen with mtime 1719497229.9137297
+File /workspace/.pip-modules/lib/python3.9/site-packages/PIL/XpmImagePlugin.py first seen with mtime 1719497229.9457293
+File /workspace/.pip-modules/lib/python3.9/site-packages/PIL/PixarImagePlugin.py first seen with mtime 1719497229.9137297
+File /workspace/.pip-modules/lib/python3.9/site-packages/PIL/SpiderImagePlugin.py first seen with mtime 1719497229.9457293
+(0.007) INSERT INTO "books_book" ("user_id", "title", "author", "image", "ISBN", "genre", "language", "description") VALUES (NULL, 'Harry Potter and the Sorcerer’s Stone', 'J.K. Rowling', 'books/hp_ovccy9', '1234', 'Fiction', 'English', '"Turning the envelope over, his hand trembling, Harry saw a purple wax seal bearing a coat of arms; a lion, an eagle, a badger and a snake surrounding a large letter ''H''."
+
+Harry Potter has never even heard of Hogwarts when the letters start dropping on the doormat at number four, Privet Drive. Addressed in green ink on yellowish parchment with a purple seal, they are swiftly confiscated by his grisly aunt and uncle. Then, on Harry''s eleventh birthday, a great beetle-eyed giant of a man called Rubeus Hagrid bursts in with some astonishing news: Harry Potter is a wizard, and he has a place at Hogwarts School of Witchcraft and Wizardry. An incredible adventure is about to begin!') RETURNING "books_book"."id"; args=(None, 'Harry Potter and the Sorcerer’s Stone', 'J.K. Rowling', 'books/hp_ovccy9', '1234', 'Fiction', 'English', '"Turning the envelope over, his hand trembling, Harry saw a purple wax seal bearing a coat of arms; a lion, an eagle, a badger and a snake surrounding a large letter \'H\'."\r\n\r\nHarry Potter has never even heard of Hogwarts when the letters start dropping on the doormat at number four, Privet Drive. Addressed in green ink on yellowish parchment with a purple seal, they are swiftly confiscated by his grisly aunt and uncle. Then, on Harry\'s eleventh birthday, a great beetle-eyed giant of a man called Rubeus Hagrid bursts in with some astonishing news: Harry Potter is a wizard, and he has a place at Hogwarts School of Witchcraft and Wizardry. An incredible adventure is about to begin!'); alias=default
+(0.004) INSERT INTO "django_admin_log" ("action_time", "user_id", "content_type_id", "object_id", "object_repr", "action_flag", "change_message") VALUES ('2024-07-05T10:47:25.760896+00:00'::timestamptz, 13, 13, '1', 'Book object (1)', 1, '[{"added": {}}]') RETURNING "django_admin_log"."id"; args=(datetime.datetime(2024, 7, 5, 10, 47, 25, 760896, tzinfo=datetime.timezone.utc), 13, 13, '1', 'Book object (1)', 1, '[{"added": {}}]'); alias=default
+(0.004) COMMIT; args=None; alias=default
+"POST /admin/books/book/add/ HTTP/1.1" 302 0
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2024-07-05T10:47:25.805485+00:00'::timestamptz AND "django_session"."session_key" = 'aj8aygk4009s2jjp7esk5gu7wfjgueua') LIMIT 21; args=(datetime.datetime(2024, 7, 5, 10, 47, 25, 805485, tzinfo=datetime.timezone.utc), 'aj8aygk4009s2jjp7esk5gu7wfjgueua'); alias=default
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 13 LIMIT 21; args=(13,); alias=default
+(0.001) SELECT COUNT(*) AS "__count" FROM "books_book"; args=(); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "books_book"; args=(); alias=default
+(0.001) SELECT "books_book"."id", "books_book"."user_id", "books_book"."title", "books_book"."author", "books_book"."image", "books_book"."ISBN", "books_book"."genre", "books_book"."language", "books_book"."description" FROM "books_book" ORDER BY "books_book"."id" DESC; args=(); alias=default
+(0.001) SELECT DISTINCT "books_book"."title" FROM "books_book" ORDER BY "books_book"."title" ASC; args=(); alias=default
+(0.001) SELECT DISTINCT "books_book"."author" FROM "books_book" ORDER BY "books_book"."author" ASC; args=(); alias=default
+"GET /admin/books/book/ HTTP/1.1" 200 12545
+"GET /static/admin/css/changelists.css HTTP/1.1" 200 6566
+(0.003) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2024-07-05T10:47:25.940997+00:00'::timestamptz AND "django_session"."session_key" = 'aj8aygk4009s2jjp7esk5gu7wfjgueua') LIMIT 21; args=(datetime.datetime(2024, 7, 5, 10, 47, 25, 940997, tzinfo=datetime.timezone.utc), 'aj8aygk4009s2jjp7esk5gu7wfjgueua'); alias=default
+(0.002) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 13 LIMIT 21; args=(13,); alias=default
+"GET /static/admin/js/filters.js HTTP/1.1" 200 978
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2024-07-05T10:47:32.973397+00:00'::timestamptz AND "django_session"."session_key" = 'aj8aygk4009s2jjp7esk5gu7wfjgueua') LIMIT 21; args=(datetime.datetime(2024, 7, 5, 10, 47, 32, 973397, tzinfo=datetime.timezone.utc), 'aj8aygk4009s2jjp7esk5gu7wfjgueua'); alias=default
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 13 LIMIT 21; args=(13,); alias=default
+(0.000) BEGIN; args=None; alias=default
+(0.001) SAVEPOINT "s140056928970304_x1"; args=None; alias=default
+(0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'user') LIMIT 21; args=('auth', 'user'); alias=default
+(0.001) RELEASE SAVEPOINT "s140056928970304_x1"; args=None; alias=default
+(0.001) COMMIT; args=None; alias=default
+"GET /admin/auth/user/add/ HTTP/1.1" 200 12648
+(0.003) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2024-07-05T10:47:33.112850+00:00'::timestamptz AND "django_session"."session_key" = 'aj8aygk4009s2jjp7esk5gu7wfjgueua') LIMIT 21; args=(datetime.datetime(2024, 7, 5, 10, 47, 33, 112850, tzinfo=datetime.timezone.utc), 'aj8aygk4009s2jjp7esk5gu7wfjgueua'); alias=default
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 13 LIMIT 21; args=(13,); alias=default
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2024-07-05T10:48:30.964943+00:00'::timestamptz AND "django_session"."session_key" = 'aj8aygk4009s2jjp7esk5gu7wfjgueua') LIMIT 21; args=(datetime.datetime(2024, 7, 5, 10, 48, 30, 964943, tzinfo=datetime.timezone.utc), 'aj8aygk4009s2jjp7esk5gu7wfjgueua'); alias=default
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 13 LIMIT 21; args=(13,); alias=default
+(0.000) BEGIN; args=None; alias=default
+(0.001) SAVEPOINT "s140056912184896_x1"; args=None; alias=default
+(0.002) SELECT 1 AS "a" FROM "auth_user" WHERE UPPER("auth_user"."username"::text) = UPPER('Userkinza') LIMIT 1; args=(1, 'Userkinza'); alias=default
+(0.001) SELECT 1 AS "a" FROM "auth_user" WHERE "auth_user"."username" = 'Userkinza' LIMIT 1; args=(1, 'Userkinza'); alias=default
+(0.000) RELEASE SAVEPOINT "s140056912184896_x1"; args=None; alias=default
+(0.000) COMMIT; args=None; alias=default
+"POST /admin/auth/user/add/ HTTP/1.1" 200 12889
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2024-07-05T10:48:31.072147+00:00'::timestamptz AND "django_session"."session_key" = 'aj8aygk4009s2jjp7esk5gu7wfjgueua') LIMIT 21; args=(datetime.datetime(2024, 7, 5, 10, 48, 31, 72147, tzinfo=datetime.timezone.utc), 'aj8aygk4009s2jjp7esk5gu7wfjgueua'); alias=default
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 13 LIMIT 21; args=(13,); alias=default
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2024-07-05T10:48:49.095187+00:00'::timestamptz AND "django_session"."session_key" = 'aj8aygk4009s2jjp7esk5gu7wfjgueua') LIMIT 21; args=(datetime.datetime(2024, 7, 5, 10, 48, 49, 95187, tzinfo=datetime.timezone.utc), 'aj8aygk4009s2jjp7esk5gu7wfjgueua'); alias=default
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 13 LIMIT 21; args=(13,); alias=default
+(0.000) BEGIN; args=None; alias=default
+(0.001) SAVEPOINT "s140056895399488_x1"; args=None; alias=default
+(0.001) SELECT 1 AS "a" FROM "auth_user" WHERE UPPER("auth_user"."username"::text) = UPPER('Userkinza') LIMIT 1; args=(1, 'Userkinza'); alias=default
+(0.001) SELECT 1 AS "a" FROM "auth_user" WHERE "auth_user"."username" = 'Userkinza' LIMIT 1; args=(1, 'Userkinza'); alias=default
+(0.001) RELEASE SAVEPOINT "s140056895399488_x1"; args=None; alias=default
+(0.000) COMMIT; args=None; alias=default
+"POST /admin/auth/user/add/ HTTP/1.1" 200 12830
+(0.003) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2024-07-05T10:48:49.206742+00:00'::timestamptz AND "django_session"."session_key" = 'aj8aygk4009s2jjp7esk5gu7wfjgueua') LIMIT 21; args=(datetime.datetime(2024, 7, 5, 10, 48, 49, 206742, tzinfo=datetime.timezone.utc), 'aj8aygk4009s2jjp7esk5gu7wfjgueua'); alias=default
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 13 LIMIT 21; args=(13,); alias=default
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
