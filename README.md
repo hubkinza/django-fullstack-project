@@ -369,8 +369,8 @@ Displays books Added by users to their wishlist
 ## Python PEP8 style guide 
 
 ## Manual Testing
-## Deployment
-# Github
+# Deployment
+## Github
 The base environment for this project was created by navigating to the gitpod CI template and clicking 'Use this template'.
 
 After making a new respository for my  project from the CI template, I created a workspace in gitpod where all of my development took place.
@@ -394,7 +394,7 @@ git add . git commit -m "commit message here" git push
 
 I had my basic project and app structure in place before preparing for early Heroku deployment
 
-Heroku
+## Heroku
 Heroku is used to host the enchanted library . Heroku is a container-based cloud Platform for building, deploying and managing apps. This project was first deployed to Heroku in the very early stages following app structure setup.
 
 The steps are as follows:
