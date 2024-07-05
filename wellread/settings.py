@@ -34,6 +34,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 
 DEBUG = 'DEBUG' in os.environ
 
+
 ALLOWED_HOSTS = ['.gitpod.io', '.herokuapp.com','.codeinstitute-ide.net']
 
 CSRF_TRUSTED_ORIGINS = ['https://*.gitpod.io', 'https://*.herokuapp.com','https://*.codeinstitute-ide.net']
@@ -104,7 +105,7 @@ WSGI_APPLICATION = 'wellread.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
-
+print(os.environ.get("DEBUG"))
 if "DEBUG" in os.environ:
     DATABASES = {
         'default': {
@@ -112,10 +113,10 @@ if "DEBUG" in os.environ:
             'NAME': BASE_DIR / 'db.sqlite3',
         }
     }
-else:
-    DATABASES = {
-        'default': dj_database_url.parse(os.environ.get("DB_URL"))
-    }
+
+DATABASES = {
+    'default': dj_database_url.parse(os.environ.get("DB_URL"))
+}
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 

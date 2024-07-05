@@ -1,0 +1,22 @@
+                    List of relations
+ Schema |            Name             | Type  |  Owner   
+--------+-----------------------------+-------+----------
+ public | account_emailaddress        | table | dxcdxjmn
+ public | account_emailconfirmation   | table | dxcdxjmn
+ public | auth_group                  | table | dxcdxjmn
+ public | auth_group_permissions      | table | dxcdxjmn
+ public | auth_permission             | table | dxcdxjmn
+ public | auth_user                   | table | dxcdxjmn
+ public | auth_user_groups            | table | dxcdxjmn
+ public | auth_user_user_permissions  | table | dxcdxjmn
+ public | books_book                  | table | dxcdxjmn
+ public | books_wishlist              | table | dxcdxjmn
+ public | django_admin_log            | table | dxcdxjmn
+ public | django_content_type         | table | dxcdxjmn
+ public | django_migrations           | table | dxcdxjmn
+ public | django_session              | table | dxcdxjmn
+ public | socialaccount_socialaccount | table | dxcdxjmn
+ public | socialaccount_socialapp     | table | dxcdxjmn
+ public | socialaccount_socialtoken   | table | dxcdxjmn
+(17 rows)
+
