@@ -357,6 +357,8 @@ Displays books Added by users to their wishlist
 
 
 # Testing 
+I have included testing details in a separate document called TESTING.md.
+
 ## Lighthouse Score
 
 ## CSS Validator 
