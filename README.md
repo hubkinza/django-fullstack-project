@@ -357,7 +357,7 @@ Displays books Added by users to their wishlist
 
 
 # Testing 
-I have included testing details in a separate document called TESTING.md.
+I have included testing details in a separate document called [TESTING.md](https://github.com/hubkinza/django-fullstack-project/blob/main/TESTING.md)
 
 ## Lighthouse Score
 
