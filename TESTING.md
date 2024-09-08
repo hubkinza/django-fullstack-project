@@ -2,8 +2,7 @@
 
 The Enchanted Library was tested thoroughly throughout development as new features were added; and bugs remedied as they arose.
 
-Additional code validation, structured user acceptabce testing and user story testing has also been carried out an is detailed below.
-
+## Responsiveness Testing
 ## HTML Validation 
 ## CSS Validation 
 ## JavaScript Validation 
