@@ -23742,3 +23742,22 @@ File /workspace/django-fullstack-project/templates/mfa/reauthenticate.html previ
 /workspace/django-fullstack-project/templates/mfa/reauthenticate.html notified as changed. Signal results: [(<function template_changed at 0x7faa40d2a160>, True), (<function translation_file_changed at 0x7faa3f94ff70>, None)].
 File /workspace/django-fullstack-project/templates/socialaccount/signup.html previous mtime: 1725840446.8195865, current mtime: 1725840468.5910966
 /workspace/django-fullstack-project/templates/socialaccount/signup.html notified as changed. Signal results: [(<function template_changed at 0x7faa40d2a160>, True), (<function translation_file_changed at 0x7faa3f94ff70>, None)].
+(0.005) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+(0.001) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+(0.002) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'gitpod' LIMIT 21; args=('gitpod',); alias=default
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'adminkinza' LIMIT 21; args=('adminkinza',); alias=default
+(0.004) INSERT INTO "auth_user" ("password", "last_login", "is_superuser", "username", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined") VALUES ('pbkdf2_sha256$600000$jjuz4omXixE0oUuQ7Z7MIp$VIpC7NqSmJEuf2lxJ3zfrhAr5TXElVpEjMENLJ0sWWQ=', NULL, true, 'adminkinza', '', '', 'admin@gmail.com', true, true, '2024-09-09T00:17:42.334107+00:00'::timestamptz) RETURNING "auth_user"."id"; args=('pbkdf2_sha256$600000$jjuz4omXixE0oUuQ7Z7MIp$VIpC7NqSmJEuf2lxJ3zfrhAr5TXElVpEjMENLJ0sWWQ=', None, True, 'adminkinza', '', '', 'admin@gmail.com', True, True, datetime.datetime(2024, 9, 9, 0, 17, 42, 334107, tzinfo=datetime.timezone.utc)); alias=default
