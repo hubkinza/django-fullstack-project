@@ -2,6 +2,8 @@ from django import forms
 from .models import Book, WishList
 
 """Form to Add a new book"""
+
+
 class BookForm(forms.ModelForm):
     class Meta:
         model = Book
@@ -13,9 +15,10 @@ class BookForm(forms.ModelForm):
             "language",
             "genre",
             "description",
-            
+
         ]
-        
+
+
 labels = {
             "title": "Book Title",
             "author": "Author",
@@ -24,5 +27,5 @@ labels = {
             "genre": "Genre",
             "language": "Language",
             "descrition": "Brief description of book",
-            
+
         }
