@@ -22,7 +22,7 @@ class BookForm(forms.ModelForm):
 labels = {
             "title": "Book Title",
             "author": "Author",
-            "ISBN":"ISBN",
+            "ISBN": "ISBN",
             "image": "Book Cover",
             "genre": "Genre",
             "language": "Language",
