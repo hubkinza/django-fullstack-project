@@ -2,31 +2,25 @@
 
 {% block content %}
 
-<style>
-   body {
-    background-image: url('static/images/argyle.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-        } 
 
-  .jumbotron{
-    color: rgb(235, 231, 230);
-    text-shadow: 2px 2px 4px rgba(157, 79, 53, 0.847);
-  }
 
-</style>
+<section class="hero bg-dark text-white d-flex align-items-center" style="background-image: url('static/images/argyle.jpg'); 
+background-size: cover; 
+background-position: center; 
+background-repeat: no-repeat; 
+background-attachment: fixed; 
+width: 100%; 
+height: 100vh;
+">
 
-<div class="jumbotron text-center">
-  
- 
-  <h1 class="display-4">Welcome to the Enchanted Library!</h1>
-  <p class="lead">Explore our collection of books and add them to your wishlist easily.</p>
-  <hr class="my-4">
-  <p>Start your journey by browsing our selection:</p>
-  
-  <a href="{% url 'books' %}" class="btn btn-primary btn-lg">Browse Books</a>
-</div>
+  <div class="container text-center">
+    <h1 class="display-4">Welcome to the Enchanted Library!</h1>
+    <p class="lead">Explore our collection of books and add them to your wishlist easily.</p>
+    <hr class="my-4">
+    <p>Start your journey by browsing our selection:</p>
+    <a href="{% url 'books' %}" class="btn btn-primary btn-lg">Browse Books</a>
+  </div>
+</section>
+
 
 {% endblock %}
