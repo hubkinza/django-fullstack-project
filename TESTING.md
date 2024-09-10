@@ -4,6 +4,10 @@ The Enchanted Library was tested thoroughly throughout development as new featur
 
 ## Responsiveness Testing
 ## HTML Validation 
+## Homepage 
+![image](https://github.com/user-attachments/assets/54f71d74-4b24-47be-960c-3545f133ffbb)
+
+
 ## CSS Validation 
 ## JavaScript Validation 
 ## Python Validation 
