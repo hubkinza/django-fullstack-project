@@ -2,7 +2,6 @@
 
 The Enchanted Library was tested thoroughly throughout development as new features were added; and bugs remedied as they arose.
 
-## Responsiveness Testing
 ## HTML Validation 
 #### HTML URI Testing:
  #### 1.Homepage 
@@ -19,15 +18,62 @@ The Enchanted Library was tested thoroughly throughout development as new featur
  ![adminaddbook](https://github.com/user-attachments/assets/e8817f86-1126-4676-a81f-aaceed191240)
 
 ## CSS Validation 
+CSS validation was completed using [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
+There were no errors. The validator however did show some warnings but most were related to variables "Due to their dynamic nature, CSS variables are currently not statically checked
+"
 ![CSS Validator](https://github.com/user-attachments/assets/395e04e3-21bf-476f-b71c-767dc2119e4f)
 
 ## Python Validation 
-CI Python Linter was used to validate the python code 
+**[CI Python Linter](https://pep8ci.herokuapp.com)** was used to validate the python code 
 
-Only files where i wrote my own code were validated. The rest of the python code in the project was part of thje Django installation package.
+Only files where i wrote my own code were validated. Python code which was part of thje Django installation package did not need validation.
 
 ## Site Lighthouse testing
+A Lighthouse report was generetd to analyse the performanace of the website 
+#### Desktop
+ ![image](https://github.com/user-attachments/assets/71e3c594-4861-4fa3-b829-1fbde58b322b)
+ #### Mobile 
+ ![image](https://github.com/user-attachments/assets/3761b68b-68cb-4da7-bca9-5fa41937c6b6)
+
 ## Cross Browser testing 
+The website functioanlity was tested on the most popular browsers using [Browserling](https://www.browserling.com/edge-testing)
+
+1. Chrome
+   ![image](https://github.com/user-attachments/assets/6b4ed4bb-64ac-43bc-a034-9af061fd3189)
+
+2. Firefox
+   ![image](https://github.com/user-attachments/assets/de33054f-a1f0-4f25-946e-0940e230096f)
+
+3. Opera
+   ![image](https://github.com/user-attachments/assets/850c48bd-5d0e-4eaf-a352-ff1717060aa4)
+
+4. Edge
+  ![image](https://github.com/user-attachments/assets/ccd0b040-60a5-48da-8f7c-ee0a58e8e55e)
+ 
+## Resposiveness 
+Responsiveness testing was done using Chrome developer tools 
+### Mobile 
+ ##### Home
+ ##### logged in 
+ ##### Books page 
+ ##### Wishlist page
+ ##### Logoout page
+ 
+### Desktop 
+ ##### Home
+ ##### logged in 
+ ##### Books page 
+ ##### Wishlist page
+ ##### Logoout page
+ 
+### Tablet/Ipad
+ ##### Home
+ ##### logged in 
+ ##### Books page 
+ ##### Wishlist page
+ ##### Logoout page
+ 
+ 
 ## Manual Testing 
 ## User Story Testing
 ## BUGS and Resolution 
