@@ -27,6 +27,23 @@ There were no errors. The validator however did show some warnings but most were
 **[CI Python Linter](https://pep8ci.herokuapp.com)** was used to validate the python code 
 
 Only files where i wrote my own code were validated. Python code which was part of thje Django installation package did not need validation.
+Admin.py
+![image](https://github.com/user-attachments/assets/5f5b8145-4a3d-4c84-8657-39d767ac6ef6)
+
+
+urls.py 
+![image](https://github.com/user-attachments/assets/ea833c29-56cf-46d1-a2bd-20bdb8c7280b)
+
+forms.py
+![image](https://github.com/user-attachments/assets/8c0d14e2-57da-47af-9353-bba33df64f50)
+
+
+
+![image](https://github.com/user-attachments/assets/93703806-5d8e-437a-a3f7-ec5aecf323b6)
+
+![image](https://github.com/user-attachments/assets/0d31fd52-043a-4554-99f7-656bac4a59f0)
+
+
 
 ## Site Lighthouse testing
 A Lighthouse report was generetd to analyse the performanace of the website 
@@ -54,24 +71,75 @@ The website functioanlity was tested on the most popular browsers using [Browser
 Responsiveness testing was done using Chrome developer tools 
 ### Mobile 
  ##### Home
+ ![image](https://github.com/user-attachments/assets/923be658-5f24-4578-966e-47d290d2a7c6)
+
  ##### logged in 
+ ![image](https://github.com/user-attachments/assets/6726d8b7-c250-43ca-92a3-e30441de5874)
+
  ##### Books page 
+ ![image](https://github.com/user-attachments/assets/361ac133-c81b-4902-9fc7-246bdfb4384b)
+
  ##### Wishlist page
+ ![image](https://github.com/user-attachments/assets/b693faa9-60d8-4db2-8c4e-667ad190ed72)
+ 
+  ##### Book Details  page
+ ![image](https://github.com/user-attachments/assets/14688168-7096-4e57-a1ce-bae9cd4b6706)
+
  ##### Logoout page
+ ![image](https://github.com/user-attachments/assets/045d0f97-787d-4da1-a9b6-359a4bf80ebd)
+
+  ##### Add Book page 
+  ![image](https://github.com/user-attachments/assets/47674028-0f9d-49b8-826a-36dffab2a03d)
+
  
 ### Desktop 
  ##### Home
+ 
+
  ##### logged in 
+ ![image](https://github.com/user-attachments/assets/f52865eb-4bd6-4d47-b2d7-53b6edc8ed68)
+
  ##### Books page 
+ ![image](https://github.com/user-attachments/assets/e8dda657-3a4c-4341-939f-23cc2b3b6c60)
+
  ##### Wishlist page
+ ![image](https://github.com/user-attachments/assets/190f21f4-f175-4422-a281-a6c7079afa33)
+
  ##### Logoout page
+![image](https://github.com/user-attachments/assets/9c0f2e0f-61b1-4bc4-94f5-bf669d2e0b8f)
+
+ ##### Book Details  page
+ ![image](https://github.com/user-attachments/assets/e58029d6-d549-4886-b096-21085637a089)
+
+ ##### Add Book page 
+ ![image](https://github.com/user-attachments/assets/697eaa9d-d717-4313-9f89-b580c38b7145)
+
+
  
 ### Tablet/Ipad
  ##### Home
+ ![image](https://github.com/user-attachments/assets/34a090c9-5d71-4070-ab78-fe325fb00bfc)
+
  ##### logged in 
+ ![image](https://github.com/user-attachments/assets/daba7221-0b21-4d32-a54d-1c91b89e7c6b)
+
  ##### Books page 
+ ![image](https://github.com/user-attachments/assets/f7a47cde-bb72-4312-b5aa-3f433c685912)
+
  ##### Wishlist page
+ ![image](https://github.com/user-attachments/assets/90d9478e-ab14-454f-9b4c-83d3a49994a2)
+
+ ##### Book Details  page
+![image](https://github.com/user-attachments/assets/ebb4fe38-a380-439a-91db-c0667b432fe0)
+
+
  ##### Logoout page
+ ![image](https://github.com/user-attachments/assets/5540793d-dea9-4e29-8058-93443eaa04c0)
+
+ #### Add Book page 
+ ![image](https://github.com/user-attachments/assets/bc614c1b-ee7b-42f6-8e0f-7d765007aeb4)
+
+
  
  
 ## Manual Testing 
