@@ -159,9 +159,6 @@ Below is a summary of how I manually tested each user story.
 
 Here I have only tested the admin panel relating to the enchanted library
 
-| Checked | ...**use a text editor within the admin panel** so that **I can create a job description in a way that is clear and appeals to the eye when creating a job post** |
-|:-------:|:--------|
-| &check; | Can add a job post successfully from the admin panel using the summer note editor |
 
 | Checked | ...**Log into a user interface** so that **I can easily manage data via a user interface** |
 |:-------:|:--------|
@@ -170,17 +167,10 @@ Here I have only tested the admin panel relating to the enchanted library
 
 | Checked | ... **Filter and search all custom models from the admin page** so that **I can utilize the admin page to review, edit and delete data quickly.** |
 |:-------:|:--------|
-| **Jobs** |  |
-| &check; | Can search keywords job by company name |
-| &check; | Can search keywords job by job title |
-| &check; | Can filter by a user to see which jobs they have pinned |
-| &check; | Can filter by Company name to see all jobs related to them |
-| &check; | Can filter by job title to see common job posts |
-| &check; | Can filter by date posted to see recent posts |
-| &check; | Can filter by date expired to see jobs recently expired |
-| &check; | Can filter by status to see hidden/public jobs |
-| &check; | Can filter by approved to know what needs approving still |
-| &check; | Can filter by username and see their pinned jobs  |
+| **Books** |  |
+| &check; | Can search book name by Author name |
+| &check; | Can search books by Books title |
+
 | **Notes** |  |
 | &check; | Can search username |
 | &check; | Can search related job |
@@ -204,7 +194,7 @@ Here I have only tested the admin panel relating to the enchanted library
 | &check; | Can view a job post |
 | &check; | Any changes to data are reflected in the database |
 
-| Checked | ...**Approve new job posts offered by the community for the community** so that **I can ensure that posts are not malicious, false, misleading, or incomplete.** |
+| Checked | ...**Approve new posts offered by the community for the community** so that **I can ensure that posts are not malicious, false, misleading, or incomplete.** |
 |:-------:|:--------|
 | &check; | Can approve a job individually from within the job post |
 | &check; | Can approve jobs on mass from the main jobs list page |
@@ -233,7 +223,6 @@ Here I have only tested the admin panel relating to the enchanted library
 | Checked | ...**quickly determine the subject of the site** so that **from the landing page, I can see if I want to continue spending my time on this site and register** |
 |:-------:|:--------|
 | &check; | Can see the theme of the site from the landing page  |
-| &check; | Can access the instructions to understand better what I can do if I register |
 
 | Checked | ...**register for an account** so that **I can enjoy a personalized experience as a job seeker** |
 |:-------:|:--------|
@@ -441,6 +430,6 @@ Here I have only tested the admin panel relating to the enchanted library
 | &check; | Form errors show when add insights form is incorrectly filled in upon submission |
 &check; | When editing an insight from the insights page, they user is redirected back to the insights page |
 
-[Back to Readme](README.md)
+[Back to Readme]()
 ## User Story Testing
 ## BUGS and Resolution 
