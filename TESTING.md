@@ -245,8 +245,9 @@ Below is a summary of how I manually tested each user story.
 | &check; | Footer on all pages the same |
 | &check; | Styling of all pages follow a theme |
 
-
-
-[Back to Readme]()
-## User Story Testing
 ## BUGS and Resolution 
+No known bugs. 
+All issues were resolved during implementation 
+
+
+[Back to Readme](https://github.com/hubkinza/django-fullstack-project/blob/main/README.md)
