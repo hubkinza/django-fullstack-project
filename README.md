@@ -359,18 +359,6 @@ Displays books Added by users to their wishlist
 # Testing 
 I have included testing details in a separate document called [TESTING.md](https://github.com/hubkinza/django-fullstack-project/blob/main/TESTING.md)
 
-## Lighthouse Score
-
-## CSS Validator 
-![image](https://github.com/hubkinza/django-fullstack-project/assets/76822546/e23ef627-4c2d-4e34-ba6e-4fd316ade2c0)
-
-## HTML validator 
-### Index Page
-![image](https://github.com/hubkinza/django-fullstack-project/assets/76822546/fbc27fee-903c-49b8-b695-cabbf8ad8512)
-
-## Python PEP8 style guide 
-
-## Manual Testing
 # Deployment
 ## Github
 The base environment for this project was created by navigating to the gitpod CI template and clicking 'Use this template'.
